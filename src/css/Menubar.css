@@ -1,0 +1,19 @@
+.navbar-link {
+    color: var(--mak-lightgray) !important;  
+    text-decoration: none; 
+    font-weight: 600 !important;        
+}
+
+.navbar-link:active, 
+.navbar-link:focus {
+    color: var(--mak-blue) !important;
+}
+
+.talk-btn{
+    font-weight: 600 !important;
+    color: var(--mak-white) !important;
+}
+
+
+
+

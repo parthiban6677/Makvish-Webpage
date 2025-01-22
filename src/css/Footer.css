@@ -1,0 +1,324 @@
+/* * Footer Scetion 7 */ */
+.container-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.footer-backround {
+    background: transparent radial-gradient(closest-side at 50% 45%, #131A58 0%, #07091B 100%) 0% 0% no-repeat padding-box;
+    border-radius: 30px;
+}
+
+.mak-logo {
+    width: 159px;
+    height: 23px;
+    margin-left: 30px;
+}
+
+.container-links {
+    color: var(--mak-sky-blue);
+    list-style: none;
+    line-height: 40px;
+    font-size: 14px;
+
+}
+
+.details-container {
+    color: var(--mak-sky-blue);
+}
+
+.warper-details {
+    line-height: 80px;
+    list-style: none;
+}
+
+.quick-links {
+    color: var(--mak-white);
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.warper-detail {
+    list-style: none;
+    line-height: 37px;
+}
+
+.mail-warper {
+    width: 18px;
+    height: 18px;
+
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.mail-wrapper {
+    filter: invert(1);
+    width: 18px;
+    height: 18px;
+    opacity: 0.7;
+}
+
+.wrapper-details {
+    font-size: 14px;
+    list-style: none;
+}
+
+.me-2 {
+    margin-right: 0.2rem;
+}
+
+.personl-deteils {
+    margin-top: 37px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.phone-wrapper {
+    width: 18px;
+    height: 18px;
+    filter: invert(1);
+    opacity: 0.7;
+
+}
+
+.me-2 {
+    margin-right: 0.2rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.location-icon {
+    width: 18px;
+    height: 18px;
+    filter: invert(1);
+    opacity: 0.7;
+    margin-top: 8px;
+
+}
+
+.wrapper-detail {
+    list-style: none;
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.me-2 {
+    margin-right: 0.2rem;
+}
+
+.service-container {
+    margin-top: 24px;
+}
+
+.quick-right {
+    margin-right: 5rem;
+}
+
+.quick-container {
+    margin-left: 2.1rem;
+}
+
+.letter {
+    font-size: 21px;
+    color: var(--mak-white);
+}
+
+
+.contant-warper {
+    margin-top: 32px;
+    line-height: 30px;
+    color: var(--mak-sky-blue);
+    font-size: 15px;
+}
+
+.lapel {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffff;
+}
+
+.letter {
+    font-size: 20px;
+    font-weight: 600;
+    /* font-family: Sofia Pro; */
+}
+
+.contant-warper {
+    font-size: 14px;
+    margin-top: 28px;
+}
+
+.ournews-contant {
+    margin-top: 47.3px;
+}
+
+.join-letter {
+    margin-left: 18px;
+}
+
+.service-warper {
+    margin-left: 30px;
+}
+
+.lapel-warper {
+    width: 97%;
+    color: var(--mak-white);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    color: #07091B;
+}
+
+.lapel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.lapel-container {
+    position: relative;
+    /* Enables absolute positioning for the icon */
+    display: flex;
+    /* Ensures proper alignment */
+    align-items: center;
+    /* Vertically centers items */
+    width: 100%;
+    /* Adjusts the width as needed */
+    max-width: 100%;
+    width: 500px;
+}
+
+
+
+.input-icon {
+    position: absolute;
+    /* Positions the icon inside the container */
+    right: 10px;
+    /* Aligns the icon to the right end */
+    top: 50%;
+    /* Centers the icon vertically */
+    transform: translateY(-50%);
+    /* Ensures vertical alignment */
+    width: 20px;
+    /* Adjusts icon size */
+    height: 20px;
+    /* Adjusts icon size */
+    margin-right: 10px;
+
+
+}
+
+.input-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+    background-color: rgb(255, 128, 0);
+    border-radius: 5px;
+    filter: invert(1);
+    cursor: pointer;
+
+}
+
+
+@media (max-width:568px) {
+    .lapel-warper {
+        width: 100%;
+        color: var(--mak-white);
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 16px;
+        outline: none;
+        color: #07091B;
+        margin-right: 30px;
+    }
+
+    .lapel-container {
+
+
+        align-items: center;
+
+    }
+
+    .input-icon {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 30px;
+        pointer-events: none;
+        background-color: rgb(255, 128, 0);
+        border-radius: 5px;
+        filter: invert(1);
+
+    }
+}
+
+
+
+
+
+.footer-container {
+    margin-top: 20px;
+    /* Add spacing above the footer container */
+}
+
+.row-line {
+    width: 95%;
+    border: none;
+    border-top: 2px dashed var(--mak-sky-blue);
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.c-footer {
+    display: flex;
+    justify-content: space-around;
+    gap: 673px;
+    margin-top: 15px;
+    padding-bottom: 25px;
+}
+
+.copyrights,
+.mak-tech {
+    font-size: 14px;
+    color: var(--mak-sky-blue);
+    margin: 0;
+}
+
+.mak-tech {
+    margin-left: 35px;
+}
+
+
+

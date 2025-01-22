@@ -1,11 +1,14 @@
-import React from 'react'
+
 import Menubar from '../component/Menubar'
 import '../css/Home.css'
+import '../css/aboutes.css';
 import bulb from '../assets/img/bulb.svg'
 import adjustments_horizontal from '../assets/img/adjustments_horizontal.svg'
 import Quality_icon from '../assets/img/Quality_icon.svg'
 import Client_Centric_icon from '../assets/img/Client_Centric_icon.svg'
 import { Tab, Tabs, Carousel, Button } from 'react-bootstrap'
+import { Accordion } from 'react-bootstrap';
+
 
 import Portfolio_img_01 from '../assets/img/Portfolio_img_01.png'
 import Portfolio_img_02 from '../assets/img/Portfolio_img_02.png'
@@ -15,10 +18,22 @@ import Portfolio_img_05 from '../assets/img/Portfolio_img_05.png'
 import see_more_icon from '../assets/img/see_more_icon.png'
 import team_img_01 from '../assets/img/team_img_01.png'
 import team_img_02 from '../assets/img/team_img_02.png'
+import lineblack from '../assets/img/Group 22410@2x.png'
 
+
+
+
+import React, { useState } from "react"
+import Footer from '../component/Footer';
 
 
 export const About = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleIcon = () => {
+        setIsOpen(!isOpen);
+    };
     return (
         <>
             <Menubar></Menubar>
@@ -102,6 +117,94 @@ export const About = () => {
                 </div>
 
             </section>
+
+
+
+            {/* <About us Section 3> */}
+            <div className="container-fluid mt-5">
+                <div className="aboutus-backround">
+                    <div className="row">
+                        {/* "What We Bring" Section */}
+                        <div className="col-12 col-md-4 mt-5 aboutus-top">
+                            <div className="aboutus-warper">
+                                <h5 className="aboutus">ABOUT US</h5>
+                                <div className="mt-3">
+                                    <h2>
+                                        <span className="what-warper">What</span> <span className="bring-container"> We Bring </span>
+                                    </h2>
+                                    <h2 className="header-table">to the Table</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-12 col-md-7  paragraph-left">
+                            <p className="paragraph-head">
+                                Our services are designed to empower your business with innovative and tailored solutions. With a focus on
+                                quality and expertise, we ensure every project delivers value, drives growth, and exceeds expectations. Discover how we can help bring your vision to life.
+                            </p>
+                            <div className="mt-5">
+                                <div className="d-flex align-items-center gap-3">
+                                    <img className="line-blue" src={lineblack} alt="line-icon" />
+                                    <p className="paragraph m-0">
+                                        <span className="paragraph-aboutes">Tailored Solutions</span>: Custom strategies designed to meet your unique business needs
+                                    </p>
+                                </div>
+                                <div className="d-flex align-items-center mt-3 gap-3">
+                                    <img className="line-blue" src={lineblack} alt="line-icon" />
+                                    <p className="paragraph m-0">
+                                        <span className="paragraph-aboutes">Expert Execution</span>: Delivered by a skilled team with a passion for excellence
+                                    </p>
+                                </div>
+                                <div className="d-flex align-items-center mt-3 gap-3">
+                                    <img className="line-blue" src={lineblack} alt="line-icon" />
+                                    <p className="paragraph m-0">
+                                        <span className="paragraph-aboutes">Impact-Driven Results</span>: Focused on creating measurable value and success
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row mt-4">
+                        {/* Accordion Section */}
+                        <div >
+                            <Accordion className="custom-accordion">
+                                <Accordion.Item eventKey="0">
+                                    <Accordion.Header onClick={toggleIcon} className="custom-header">
+                                        <span className="header-text">UX DESIGN</span>
+                                        <span>{isOpen ? "−" : "+"}</span>
+                                    </Accordion.Header>
+                                    <Accordion.Body>
+                                        <div className="d-flex accordion-container">
+                                            <div className="col-12 col-md-7 accordion-flex">
+                                                <p className="colops-container">
+                                                    We craft user experiences that connect with your audience on a deeper level. By combining user research,
+                                                    wireframing, and prototyping, we ensure every interaction is seamless and intuitive. Our goal is to create
+                                                    experiences that delight users and drive results. Let us turn your vision into a user-centered masterpiece.
+                                                </p>
+                                            </div>
+                                            <div className="col-12 col-md-5">
+                                                <ul className="ui-classes">
+                                                    <li>User Research</li>
+                                                    <li>Persona Development</li>
+                                                    <li>User Journey Mapping</li>
+                                                    <li>AI Validation</li>
+                                                    <li>Wireframing</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </Accordion.Body>
+
+                                </Accordion.Item>
+                            </Accordion>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
 
 
             <section id='portfolio'>
@@ -329,14 +432,12 @@ export const About = () => {
                         </div>
                     </div>
                 </div>
-
             </section>
 
+            <Footer />
 
 
-            <div>
-                <h1>skmksdjmksjdk</h1>
-            </div>
+
 
 
         </>

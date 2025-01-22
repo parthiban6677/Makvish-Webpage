@@ -42,13 +42,13 @@ export const About = () => {
 
                 <div className='container mt-5'>
                     <div className='row'>
-                        <div className='col-12 col-md-5'>
+                        <div className='col-12 col-md-6'>
                             <div>
-                                <h3 className='about-title'>ABOUT US</h3>
+                                <h6 className='about-title'>ABOUT US</h6>
                                 <h1> <span className='about-sub-title'>The</span> <span className='about-story'>Story</span> <span className='about-sub-title'>Behind</span> <span className='about-story'>Our Success</span></h1>
                             </div>
                         </div>
-                        <div className='col-12 col-md-7'>
+                        <div className='col-12 col-md-6'>
                             <div className='about-desc'>
                                 <p>
                                     Our mission is clear: to empower businesses, organizations, and individuals with software solutions that make a difference. We believe in harnessing the power of technology to solve complex problems, streamline operations, and create exceptional user experiences.
@@ -211,13 +211,13 @@ export const About = () => {
 
                 <div className='container mt-5'>
                     <div className='row'>
-                        <div className='col-12 col-md-5'>
+                        <div className='col-12 col-md-6'>
                             <div>
                                 <h3 className='about-title'>PORTFOLIO</h3>
-                                <h1> <span className='about-sub-title'>Turning</span> <span className='about-story'>Ideas</span> <span className='about-sub-title'>into</span> <span className='about-story'>Reality</span></h1>
+                                <h1> <span className='about-sub-title'>Turning</span> <span className='about-story'>Ideas</span> <span className='about-sub-title'>into</span> <br/> <span className='about-story'>Reality</span></h1>
                             </div>
                         </div>
-                        <div className='col-12 col-md-7'>
+                        <div className='col-12 col-md-6'>
                             <div className='about-desc'>
                                 <p>
                                     Explore the projects that define our journey of innovation and excellence. Each solution reflects our commitment to quality, creativity, and client success. From mobile apps to web platforms, our portfolio showcases the diverse and impactful work we’ve delivered to businesses across industries.
@@ -230,7 +230,7 @@ export const About = () => {
                 <div className=" container tab-header mt-5">
                     <Carousel indicators={false} controls={false} autoplay={true}>
                         <Carousel.Item>
-                            <Tabs defaultActiveKey="1" id="tab-example">
+                            <Tabs defaultActiveKey="1" id="tab-example" className='navbar-link'>
                                 <Tab eventKey="1" title="All" className='mt-4'>
                                     <div className='row'>
                                         <div className='Col-12 col-md-4'>
@@ -271,19 +271,19 @@ export const About = () => {
                                 </Tab>
 
                                 <Tab eventKey="2" title="Branding">
-                                    Content for Bar Graph
+                                    Content for Branding
                                 </Tab>
 
                                 <Tab eventKey="3" title="Mobile App">
-                                    Content for Bubble Map
+                                    Content for Mobile App
                                 </Tab>
 
                                 <Tab eventKey="4" title="Web App">
-                                    Content for Comparison Chart
+                                    Content for Web App
                                 </Tab>
 
                                 <Tab eventKey="5" title="Website">
-                                    Content for Concept Map
+                                    Content for Website
                                 </Tab>
                             </Tabs>
                         </Carousel.Item>
@@ -301,13 +301,13 @@ export const About = () => {
 
                 <div className='container mt-5'>
                     <div className='row'>
-                        <div className='col-12 col-md-5'>
+                        <div className='col-12 col-md-6'>
                             <div>
                                 <h3 className='about-title'>TEAM</h3>
                                 <h1> <span className='about-sub-title'>The</span> <span className='about-story'>Minds</span> <span className='about-sub-title'>Behind</span> <span className='about-story'>Our Mission</span></h1>
                             </div>
                         </div>
-                        <div className='col-12 col-md-7'>
+                        <div className='col-12 col-md-6'>
                             <div className='about-desc'>
                                 <p>
                                     Meet the leadership team that drives our vision forward. Their strategic thinking and industry expertise lay the foundation for our innovation and success. With a focus on excellence, they guide our efforts to create impactful solutions. Committed to growth and collaboration, they inspire us to achieve more every day. Together, they shape the future of our organization.
@@ -324,9 +324,9 @@ export const About = () => {
                                 <div className='team-img'>
                                     <img src={team_img_01} alt='' />
                                 </div>
-                                <div className='teams-name'>
-                                    <h3>Indumathi</h3>
-                                    <p>FOUNDER</p>
+                                <div className='team-content'>
+                                    <h3 className='teams-name'>Indumathi</h3>
+                                    <p className='team-desc'>FOUNDER</p>
                                 </div>
                             </div>
                         </div>
@@ -335,9 +335,9 @@ export const About = () => {
                                 <div className='team-img'>
                                     <img src={team_img_01} alt='' />
                                 </div>
-                                <div className='teams-name'>
-                                    <h3>Veeramani</h3>
-                                    <p>CEO</p>
+                                <div className='team-content'>
+                                    <h3 className='teams-name'>Veeramani</h3>
+                                    <p className='team-desc'>CEO</p>
                                 </div>
                             </div>
                         </div>
@@ -346,9 +346,9 @@ export const About = () => {
                                 <div className='team-img'>
                                     <img src={team_img_02} alt='' />
                                 </div>
-                                <div className='teams-name'>
-                                    <h3>Suthakar</h3>
-                                    <p>ACCOUNT HEAD</p>
+                                <div className='team-content'>
+                                    <h3 className='teams-name'>Suthakar</h3>
+                                    <p className='team-desc'>ACCOUNT HEAD</p>
                                 </div>
                             </div>
                         </div>
@@ -357,9 +357,9 @@ export const About = () => {
                                 <div className='team-img'>
                                     <img src={team_img_02} alt='' />
                                 </div>
-                                <div className='teams-name'>
-                                    <h3>Suthakar</h3>
-                                    <p>ACCOUNT HEAD</p>
+                                <div className='team-content'>
+                                    <h3 className='teams-name'>Suthakar</h3>
+                                    <p className='team-desc'>ACCOUNT HEAD</p>
                                 </div>
                             </div>
                         </div>
@@ -372,13 +372,13 @@ export const About = () => {
             <section id='blog'>
                 <div className='container mt-5'>
                     <div className='row'>
-                        <div className='col-12 col-md-5'>
+                        <div className='col-12 col-md-6'>
                             <div>
                                 <h3 className='about-title'>CONTACT US</h3>
-                                <h1> <span className='about-story'>Let’s Build</span> <span className='about-sub-title'>Something Great</span> <span className='about-story'>Together</span></h1>
+                                <h1> <span className='about-story'>Let’s Build</span> <span className='about-sub-title'>Something <br/> Great</span> <span className='about-story'>Together</span></h1>
                             </div>
                         </div>
-                        <div className='col-12 col-md-7'>
+                        <div className='col-12 col-md-6'>
                             <div className='about-desc'>
                                 <p>
                                     We’re always happy to connect! Whether you have a question, need support, or simply want to share feedback, our team is here to assist you. Reach out to us via the form below, and we’ll get back to you as quickly as possible. Let’s start a conversation!
@@ -391,43 +391,50 @@ export const About = () => {
                     </div>
                 </div>
 
-                <div className='container'>
+                <div className='container mt-5'>
                     <div className='row'>
-                        <div className='col-12 col-md-2'>
-                            <div className='about-desc'>
-                                <p>
-                                    We’re interested in <br /> Working together
+                        <div className='col-12 col-md-3'>
+                            <div>
+                                <p className='cantact-desc'>
+                                    We’re interested in <br/> Working together
                                 </p>
                                 <h1 className='see-more'>+91 8124161463</h1>
                             </div>
                         </div>
-                        <div className='col-12 col-md-2'>
-                            <div className='about-desc'>
-                                <p>
-                                    Having a project in mind? Send a message to
+                        <div className='col-12 col-md-3'>
+                            <div>
+                                <p className='cantact-desc'>
+                                    Having a project in mind? <br/> Send a message to
                                 </p>
                                 <h1 className='see-more'>veera@makvishan.com</h1>
                             </div>
                         </div>
                         <div className='col-12 col-md-6'>
                             <form action="/submit" method="POST">
-                                <div className="form-group">
-                                    <input type="text" className="form-control" id="first-name" name="first-name" placeholder='First Name' required />
+                                <div className='row'>
+                                    <div className='col'>
+                                        <div className="form-group ">
+                                            <input type="text" className="form-control form-content" id="first-name" name="first-name" placeholder='First Name' required />
+                                        </div>
+                                    </div>
+                                    <div className='col'>
+                                        <div className="form-group">
+                                            <input type="text" className="form-control form-content" id="last-name" name="last-name" placeholder='Last Name' required />
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <div className="form-group">
-                                    <input type="text" className="form-control" id="last-name" name="last-name" placeholder='Last Name' required />
+                                <div className="form-group mt-3">
+                                    <input type="email" className="form-control form-mail" id="email" name="email" placeholder='Your Mail ID' required />
                                 </div>
 
-                                <div className="form-group">
-                                    <input type="email" className="form-control" id="email" name="email" placeholder='Your Mail ID' required />
+                                <div className="form-group mt-3">
+                                    <textarea className="form-control form-message" id="message" name="message" placeholder='Your Message…' rows="4" required></textarea>
                                 </div>
 
-                                <div className="form-group">
-                                    <textarea className="form-control" id="message" name="message" placeholder='Your Message…' rows="4" required></textarea>
+                                <div className='mt-4'>
+                                    <button type="submit" className="btn btn-primary talk-btn">Let’s Talk</button>
                                 </div>
-
-                                {/* <button type="submit" class="btn btn-primary">Submit</button> */}
                             </form>
                         </div>
                     </div>

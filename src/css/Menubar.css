@@ -1,5 +1,5 @@
 .navbar-link {
-    color: var(--mak-lightgray) !important;  
+    color: var(--mak-slategray) !important;  
     text-decoration: none; 
     font-weight: 600 !important;        
 }
@@ -12,6 +12,16 @@
 .talk-btn{
     font-weight: 600 !important;
     color: var(--mak-white) !important;
+
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--mak-blue);
+
+    justify-content: end !important;
+    margin-left: auto !important; 
+    margin-right: 0 !important;   
+    display: block !important;   
 }
 
 

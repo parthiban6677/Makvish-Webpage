@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/Footer.css'
-import makvishanlogo from  '../assets/img/Colored Logo with Text@2x.png'
+import makvishanlogo from '../assets/img/Colored Logo with Text@2x.png'
 import sendmail from '../assets/img/mail.png'
 import phone from '../assets/img/phone.png'
 import map from '../assets/img/map-pin.png'
@@ -11,8 +11,8 @@ function Footer() {
     return (
         <div>
             {/* <Footer Section 7> */}
-            <div className='container-fluid mt-5'>
-                <div className='footer-backround'>
+            <div className='container-fluid mt-5 '>
+                <div className='footer-backround '>
                     <div className='row container-footer p-1'>
                         <div className='col-12 col-md-3'>
                             <div className='mt-5'>
@@ -42,8 +42,6 @@ function Footer() {
                                     </ul>
                                 </div>
                             </div>
-
-
                         </div>
 
                         <div className='col-12 col-md-2 quick-container  '>
@@ -83,7 +81,7 @@ function Footer() {
                                     <h4 className='letter' >JOIN OUR NEWSLETTER</h4>
                                 </div>
                                 <div className='contant-warper'>
-                                    <p>Subscribe our newsletter to get the latest news and  Updates</p>
+                                    <p>Subscribe our newsletter to get the latest news and <br />  Updates</p>
                                 </div>
 
                                 <div className="lapel-container">
@@ -95,7 +93,7 @@ function Footer() {
                         </div>
                         <div class="footer-container">
                             <hr class="row-line" />
-                            <div class="c-footer d-flex ">
+                            <div class="c-footer  ">
                                 <h5 class="copyrights ">Copyrights © 2025 . All Rights Reserved.</h5>
                                 <h5 class="mak-tech ">Powered by Makvishan Technology</h5>
                             </div>

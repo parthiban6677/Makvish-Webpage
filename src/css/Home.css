@@ -266,6 +266,7 @@
 
     .team-img {
         /* position: relative; */
+        text-align: center;
         max-width: 100%;
         width: 369px;
         height: 380px;

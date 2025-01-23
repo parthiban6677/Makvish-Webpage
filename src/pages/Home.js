@@ -34,12 +34,18 @@ export const About = () => {
     const toggleIcon = () => {
         setIsOpen(!isOpen);
     };
+
+    const [openKey, setOpenKey] = useState(null);
+
+    const toggleAccordion = (key) => {
+        setOpenKey(openKey === key ? null : key);
+    };
+
     return (
         <>
             <Menubar></Menubar>
 
             <section id='about' >
-
                 <div className='container mt-5'>
                     <div className='row'>
                         <div className='col-12 col-md-6'>
@@ -124,20 +130,20 @@ export const About = () => {
             <div className="container-fluid mt-5">
                 <div className="aboutus-backround">
                     <div className="row">
-                        {/* "What We Bring" Section */}
                         <div className="col-12 col-md-4 mt-5 aboutus-top">
                             <div className="aboutus-warper">
                                 <h5 className="aboutus">ABOUT US</h5>
                                 <div className="mt-3">
                                     <h2>
-                                        <span className="what-warper">What</span> <span className="bring-container"> We Bring </span>
+                                        <span className="what-warper">What</span>
+                                        <span className="bring-container">We Bring</span>
                                     </h2>
                                     <h2 className="header-table">to the Table</h2>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col-12 col-md-7  paragraph-left">
+                        <div className="col-12 col-md-7 paragraph-left">
                             <p className="paragraph-head">
                                 Our services are designed to empower your business with innovative and tailored solutions. With a focus on
                                 quality and expertise, we ensure every project delivers value, drives growth, and exceeds expectations. Discover how we can help bring your vision to life.
@@ -165,26 +171,35 @@ export const About = () => {
                         </div>
                     </div>
 
-                    <div className="row mt-4">
-                        {/* Accordion Section */}
-                        <div >
-                            <Accordion className="custom-accordion">
+                    <div>
+                        <hr className='dash-lines' />
+                    </div>
+
+
+
+                    <div className="row">
+                        <div className="col-12 col-md-12">
+                            <Accordion>
                                 <Accordion.Item eventKey="0">
-                                    <Accordion.Header onClick={toggleIcon} className="custom-header">
-                                        <span className="header-text">UX DESIGN</span>
-                                        <span>{isOpen ? "−" : "+"}</span>
+                                    <Accordion.Header onClick={() => toggleAccordion(0)} className="custom-header">
+                                        <div className="ux-design d-flex justify-content-between">
+                                            <span className="ux-header">UX DESIGN</span>
+                                            <span className="icon">
+                                                {openKey === 0 ? "−" : "+"}
+                                            </span>
+                                        </div>
                                     </Accordion.Header>
                                     <Accordion.Body>
-                                        <div className="d-flex accordion-container">
-                                            <div className="col-12 col-md-7 accordion-flex">
-                                                <p className="colops-container">
+                                        <div className="row">
+                                            <div className="col-12 col-md-7">
+                                                <p className='paragraph-ui'>
                                                     We craft user experiences that connect with your audience on a deeper level. By combining user research,
                                                     wireframing, and prototyping, we ensure every interaction is seamless and intuitive. Our goal is to create
-                                                    experiences that delight users and drive results. Let us turn your vision into a user-centered masterpiece.
+                                                    experiences that delight users and drive results. Let us turn your vision into a user- <br /> centered masterpiece.
                                                 </p>
                                             </div>
-                                            <div className="col-12 col-md-5">
-                                                <ul className="ui-classes">
+                                            <div className="col-12 col-md-4" style={{ display: "flex", justifyContent: "end" }}>
+                                                <ul className='list-container'>
                                                     <li>User Research</li>
                                                     <li>Persona Development</li>
                                                     <li>User Journey Mapping</li>
@@ -194,11 +209,13 @@ export const About = () => {
                                             </div>
                                         </div>
                                     </Accordion.Body>
-
                                 </Accordion.Item>
                             </Accordion>
                         </div>
                     </div>
+
+
+
                 </div>
             </div>
 
@@ -208,13 +225,12 @@ export const About = () => {
 
 
             <section id='portfolio'>
-
                 <div className='container mt-5'>
                     <div className='row'>
                         <div className='col-12 col-md-6'>
                             <div>
                                 <h3 className='about-title'>PORTFOLIO</h3>
-                                <h1> <span className='about-sub-title'>Turning</span> <span className='about-story'>Ideas</span> <span className='about-sub-title'>into</span> <br/> <span className='about-story'>Reality</span></h1>
+                                <h1> <span className='about-sub-title'>Turning</span> <span className='about-story'>Ideas</span> <span className='about-sub-title'>into</span> <br /> <span className='about-story'>Reality</span></h1>
                             </div>
                         </div>
                         <div className='col-12 col-md-6'>
@@ -375,7 +391,7 @@ export const About = () => {
                         <div className='col-12 col-md-6'>
                             <div>
                                 <h3 className='about-title'>CONTACT US</h3>
-                                <h1> <span className='about-story'>Let’s Build</span> <span className='about-sub-title'>Something <br/> Great</span> <span className='about-story'>Together</span></h1>
+                                <h1> <span className='about-story'>Let’s Build</span> <span className='about-sub-title'>Something <br /> Great</span> <span className='about-story'>Together</span></h1>
                             </div>
                         </div>
                         <div className='col-12 col-md-6'>
@@ -396,7 +412,7 @@ export const About = () => {
                         <div className='col-12 col-md-3'>
                             <div>
                                 <p className='cantact-desc'>
-                                    We’re interested in <br/> Working together
+                                    We’re interested in <br /> Working together
                                 </p>
                                 <h1 className='see-more'>+91 8124161463</h1>
                             </div>
@@ -404,7 +420,7 @@ export const About = () => {
                         <div className='col-12 col-md-3'>
                             <div>
                                 <p className='cantact-desc'>
-                                    Having a project in mind? <br/> Send a message to
+                                    Having a project in mind? <br /> Send a message to
                                 </p>
                                 <h1 className='see-more'>veera@makvishan.com</h1>
                             </div>

@@ -1,13 +1,41 @@
+/* .navbar-link {
+    color: var(--mak-slategray) !important;  
+    text-decoration: none; 
+    font-weight: 600 !important;        
+} */
+
+/* .navbar-link:active, 
+.navbar-link:focus {
+    color: var(--mak-blue) !important;
+} */
+
+
 .navbar-link {
     color: var(--mak-slategray) !important;  
     text-decoration: none; 
     font-weight: 600 !important;        
+    position: relative;
 }
 
 .navbar-link:active, 
 .navbar-link:focus {
     color: var(--mak-blue) !important;
 }
+
+.navbar-link:active::after,
+.navbar-link:focus::after {
+    content: ''; 
+    position: absolute;
+    top: 35px !important;
+    left: 45%; 
+    width: 6px;
+    height: 6px; 
+    background-color: var(--mak-blue);
+    border-radius: 100%;
+}
+
+
+
 
 .talk-btn{
     font-weight: 600 !important;

@@ -1,4 +1,5 @@
-
+import React, { useState } from "react"
+import Footer from '../component/Footer';
 import Menubar from '../component/Menubar'
 import '../css/Home.css'
 import '../css/aboutes.css';
@@ -20,11 +21,14 @@ import team_img_01 from '../assets/img/team_img_01.png'
 import team_img_02 from '../assets/img/team_img_02.png'
 import lineblack from '../assets/img/Group 22410@2x.png'
 
+import home01 from "../assets/img/home-01.png"
+import home02 from '../assets/img/home-02.png'
+import home03 from '../assets/img/home-03.png'
 
 
 
-import React, { useState } from "react"
-import Footer from '../component/Footer';
+
+
 
 
 export const About = () => {
@@ -45,13 +49,46 @@ export const About = () => {
         <>
             <Menubar></Menubar>
 
+             <section>
+                <div className="container">
+                    <div>
+                        <div className="hero-title">
+                            <h1>
+                                <span className="home-title">Elevate</span>
+                                <span className="about-sub-title"> Your Business <br /> with </span>
+                                <span className="about-story"> Cutting Edge <br /> Software Solutions </span>
+                            </h1>
+                            <p className="about-desc">
+                                We are more than just a software company. We leverage technology to drive
+                                <br />
+                                innovation, growth, and success.
+                            </p>
+                        </div>
+                        <div className="hero-images">
+                            <div className="hero-img-01">
+                                <img src={home01} alt="home01" />
+                            </div>
+                            <div className="hero-img-02">
+                                <img src={home02} alt="home02" />
+                            </div>
+                            <div className="hero-img-03">
+                                <img src={home03} alt="home03" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section> 
+
+
+
             <section id='about' >
                 <div className='container mt-5'>
                     <div className='row'>
                         <div className='col-12 col-md-6'>
                             <div>
                                 <h6 className='about-title'>ABOUT US</h6>
-                                <h1> <span className='about-sub-title'>The</span> <span className='about-story'>Story</span> <span className='about-sub-title'>Behind</span> <span className='about-story'>Our Success</span></h1>
+                                <h1> <span className='about-sub-title'>The</span> <span className='about-story'>Story</span> <span className='about-sub-title'>Behind <br/> </span> <span className='about-story'>Our Success</span></h1>
                             </div>
                         </div>
                         <div className='col-12 col-md-6'>
@@ -124,12 +161,11 @@ export const About = () => {
 
             </section>
 
-
-
             {/* <About us Section 3> */}
             <div className="container-fluid mt-5">
                 <div className="aboutus-backround">
                     <div className="row">
+                        {/* "What We Bring" Section */}
                         <div className="col-12 col-md-4 mt-5 aboutus-top">
                             <div className="aboutus-warper">
                                 <h5 className="aboutus">ABOUT US</h5>
@@ -171,15 +207,10 @@ export const About = () => {
                         </div>
                     </div>
 
-                    <div>
-                        <hr className='dash-lines' />
-                    </div>
-
-
-
-                    <div className="row">
-                        <div className="col-12 col-md-12">
-                            <Accordion>
+                    <div className="row mt-4">
+                        {/* Accordion Section */}
+                        <div >
+                            <Accordion className="custom-accordion">
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header onClick={() => toggleAccordion(0)} className="custom-header">
                                         <div className="ux-design d-flex justify-content-between">
@@ -220,10 +251,6 @@ export const About = () => {
             </div>
 
 
-
-
-
-
             <section id='portfolio'>
                 <div className='container mt-5'>
                     <div className='row'>
@@ -246,22 +273,22 @@ export const About = () => {
                 <div className=" container tab-header mt-5">
                     <Carousel indicators={false} controls={false} autoplay={true}>
                         <Carousel.Item>
-                            <Tabs defaultActiveKey="1" id="tab-example" className='navbar-link'>
+                            <Tabs defaultActiveKey="1" id="tab-example" className='tab-content'>
                                 <Tab eventKey="1" title="All" className='mt-4'>
                                     <div className='row'>
                                         <div className='Col-12 col-md-4'>
                                             <div>
-                                                <img src={Portfolio_img_01} alt='...' className='protfolio-img' />
+                                                <img src={Portfolio_img_01} alt='...' className='portfolio-img' />
                                             </div>
                                         </div>
                                         <div className='Col-12 col-md-4'>
                                             <div>
-                                                <img src={Portfolio_img_02} alt='...' className='protfolio-img' />
+                                                <img src={Portfolio_img_02} alt='...' className='portfolio-img' />
                                             </div>
                                         </div>
                                         <div className='Col-12 col-md-4'>
                                             <div>
-                                                <img src={Portfolio_img_03} alt='...' className='protfolio-img' />
+                                                <img src={Portfolio_img_03} alt='...' className='portfolio-img' />
                                             </div>
                                         </div>
                                     </div>
@@ -269,17 +296,17 @@ export const About = () => {
                                     <div className='row mt-4'>
                                         <div className='Col-12 col-md-4'>
                                             <div>
-                                                <img src={Portfolio_img_04} alt='...' className='protfolio-img' />
+                                                <img src={Portfolio_img_04} alt='...' className='portfolio-img' />
                                             </div>
                                         </div>
                                         <div className='Col-12 col-md-4'>
                                             <div>
-                                                <img src={Portfolio_img_05} alt='...' className='protfolio-img' />
+                                                <img src={Portfolio_img_05} alt='...' className='portfolio-img' />
                                             </div>
                                         </div>
                                         <div className='Col-12 col-md-4'>
                                             <div>
-                                                <img src={Portfolio_img_01} alt='...' className='protfolio-img' />
+                                                <img src={Portfolio_img_01} alt='...' className='portfolio-img' />
                                             </div>
                                         </div>
                                     </div>
@@ -320,7 +347,7 @@ export const About = () => {
                         <div className='col-12 col-md-6'>
                             <div>
                                 <h3 className='about-title'>TEAM</h3>
-                                <h1> <span className='about-sub-title'>The</span> <span className='about-story'>Minds</span> <span className='about-sub-title'>Behind</span> <span className='about-story'>Our Mission</span></h1>
+                                <h1> <span className='about-sub-title'>The</span> <span className='about-story'>Minds</span> <span className='about-sub-title'>Behind <br/> </span> <span className='about-story'>Our Mission</span></h1>
                             </div>
                         </div>
                         <div className='col-12 col-md-6'>
@@ -335,8 +362,8 @@ export const About = () => {
 
                 <div className='container mt-5'>
                     <div className='row'>
-                        <div className='col-12 col-md-3'>
-                            <div>
+                        <div className='col-12  col-md-6 col-lg-3'>
+                            <div className="team-hero">
                                 <div className='team-img'>
                                     <img src={team_img_01} alt='' />
                                 </div>
@@ -346,7 +373,7 @@ export const About = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-md-3'>
+                        <div className='col-12 col-md-6 col-lg-3'>
                             <div>
                                 <div className='team-img'>
                                     <img src={team_img_01} alt='' />
@@ -357,7 +384,7 @@ export const About = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-md-3'>
+                        <div className='col-12 col-md-6 col-lg-3'>
                             <div>
                                 <div className='team-img'>
                                     <img src={team_img_02} alt='' />
@@ -368,7 +395,7 @@ export const About = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-md-3'>
+                        <div className='col-12 col-md-6 col-lg-3'>
                             <div>
                                 <div className='team-img'>
                                     <img src={team_img_02} alt='' />
@@ -459,6 +486,8 @@ export const About = () => {
 
             <Footer />
 
+
+        
 
 
 

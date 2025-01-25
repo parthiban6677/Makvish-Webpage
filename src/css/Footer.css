@@ -1,6 +1,5 @@
-/* * Footer Scetion 7 */ */
-
-.container-footer {
+/* * Footer Scetion 7 */
+*/ .container-footer {
     display: flex;
     justify-content: space-around;
 }
@@ -57,6 +56,11 @@
     display: flex;
 }
 
+
+.mail-header {
+    margin-top: 0px;
+}
+
 .align-items-center {
     align-items: center;
 }
@@ -66,6 +70,7 @@
     width: 18px;
     height: 18px;
     opacity: 0.7;
+    margin-top: 0px;
 }
 
 .wrapper-details {
@@ -186,7 +191,7 @@
 .lapel-warper {
     width: 97%;
     color: var(--mak-white);
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     font-size: 16px;
     outline: none;
@@ -218,19 +223,13 @@
 
 .input-icon {
     position: absolute;
-    /* Positions the icon inside the container */
     right: 10px;
-    /* Aligns the icon to the right end */
     top: 50%;
-    /* Centers the icon vertically */
     transform: translateY(-50%);
-    /* Ensures vertical alignment */
     width: 20px;
-    /* Adjusts icon size */
     height: 20px;
-    /* Adjusts icon size */
-    margin-right: 10px;
-
+    margin-right: 16px;
+    margin-top: 1px;
 
 }
 
@@ -243,7 +242,7 @@
     height: 30px;
     pointer-events: none;
     background-color: rgb(255, 128, 0);
-    border-radius: 5px;
+    border-radius: 5.1px;
     filter: invert(1);
     cursor: pointer;
 
@@ -278,8 +277,9 @@
         height: 30px;
         pointer-events: none;
         background-color: rgb(255, 128, 0);
-        border-radius: 5px;
+        border-radius: 10px;
         filter: invert(1);
+       
 
     }
 }
@@ -329,8 +329,8 @@
     .container-footer {
         flex-direction: column;
         align-items: center;
-        gap: 20px; 
-    
+        gap: 20px;
+
     }
 
     .footer-backround {
@@ -340,9 +340,9 @@
     .mak-logo {
         width: 150px;
         height: auto;
-    ;
+        ;
 
-        text-align: center; 
+        text-align: center;
     }
 
     .quick-right,
@@ -350,7 +350,7 @@
     .service-container,
     .join-letter,
     .service-warper {
-        margin: 0; 
+        margin: 0;
         text-align: center;
     }
 
@@ -360,7 +360,7 @@
     .warper-detail,
     .warper-details {
         line-height: 24px;
-        font-size: 13px; 
+        font-size: 13px;
     }
 
     .lapel-container {
@@ -370,13 +370,15 @@
 
     .lapel-warper {
         width: 100%;
-        margin-bottom: 10px;
+        
     }
 
     .input-icon {
         right: 15px;
         width: 25px;
         height: 25px;
+
+       
     }
 
     .row-line {
@@ -385,7 +387,7 @@
 
     .c-footer {
         flex-direction: column;
-        gap: 20px; 
+        gap: 20px;
         text-align: center;
     }
 
@@ -437,7 +439,7 @@
         right: 10px;
         width: 20px;
         height: 20px;
-      
+
     }
 
     .row-line {
@@ -457,7 +459,7 @@
 
 
 
-    .aboutus{
+    .aboutus {
         text-align: center;
     }
 }

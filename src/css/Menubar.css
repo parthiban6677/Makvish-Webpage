@@ -53,5 +53,118 @@
 }
 
 
+.menu-talk-btn{
+    font-weight: 600 !important;
+    color: var(--mak-white) !important;
+
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--mak-blue);
+
+    justify-content: end !important;
+    /* margin-left: auto !important;  */
+    /* margin-right: 0 !important;    */
+    /* display: block !important;    */
+}
 
 
+
+
+
+
+
+
+
+
+
+/* Base styles for the logo and navbar links */
+.logo-img {
+    max-width: 150px;
+  }
+  
+  /* Style the hamburger icon */
+  /* .hamburger-icon {
+    cursor: pointer;
+  } */
+  
+  /* Navbar link styles */
+  .navbar-link {
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    /* color: #555; */
+    margin-right: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  /* .navbar-link:hover {
+    color: #DB4B82; 
+  } */
+  
+  /* Button styles */
+  /* .talk-btn {
+    background-color: #DB4B82;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 10px;
+  } */
+  
+  /* .talk-btn:hover {
+    background-color: #a13a66; 
+  } */
+  
+  /* Bootstrap 5 Grid Customizations */
+  
+  /* For medium and larger screens, show nav links horizontally */
+  /* @media (min-width: 768px) {
+    .navbar-nav {
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    .hamburger-icon {
+      display: none;
+    }
+  
+    .talk-btn {
+      margin-top: 0;
+    }
+  } */
+  
+  /* For small screens, Offcanvas should be used */
+  /* @media (max-width: 767px) {
+    .navbar-nav {
+      display: none;
+    }
+  
+    .d-md-none {
+      display: block;
+    }
+  
+    
+    .offcanvas {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 250px;
+    }
+  
+    .offcanvas-body {
+      padding: 10px;
+    }
+  
+    .offcanvas-title {
+      font-weight: bold;
+    }
+  
+    .offcanvas-header {
+      background-color: #f1f1f1;
+    }
+  } */
+  

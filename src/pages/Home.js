@@ -6,7 +6,7 @@ import bulb from '../assets/img/bulb.svg'
 import adjustments_horizontal from '../assets/img/adjustments_horizontal.svg'
 import Quality_icon from '../assets/img/Quality_icon.svg'
 import Client_Centric_icon from '../assets/img/Client_Centric_icon.svg'
-import { Tab, Tabs, Carousel, Button } from 'react-bootstrap'
+import { Tab, Tabs, Carousel, } from 'react-bootstrap'
 import { Accordion } from 'react-bootstrap';
 
 
@@ -42,7 +42,17 @@ export const About = () => {
     };
 
     return (
+
+
+
         <>
+
+            <div
+                className="accordion-header class-to-remove"
+                onClick={(e) => e.currentTarget.classList.remove("class-to-remove")}
+            >
+                {/* <span>Click to Remove Class</span> */}
+            </div>
             <Menubar></Menubar>
 
             <section id='about' >
@@ -124,13 +134,11 @@ export const About = () => {
 
             </section>
 
-
-
             {/* <About us Section 3> */}
             <div className="container-fluid mt-5">
                 <div className="aboutus-backround">
                     <div className="row">
-                        <div className="col-12 col-md-4 mt-5 aboutus-top">
+                        <div className="col-12 col-md-4  aboutus-top">
                             <div className="aboutus-warper">
                                 <h5 className="aboutus">ABOUT US</h5>
                                 <div className="mt-3">
@@ -143,77 +151,178 @@ export const About = () => {
                             </div>
                         </div>
 
-                        <div className="col-12 col-md-7 paragraph-left">
+                        <div className="col-12 col-md-6 paragraph-left">
                             <p className="paragraph-head">
                                 Our services are designed to empower your business with innovative and tailored solutions. With a focus on
                                 quality and expertise, we ensure every project delivers value, drives growth, and exceeds expectations. Discover how we can help bring your vision to life.
                             </p>
-                            <div className="mt-5">
+                            <div className="mt-4  line-container">
                                 <div className="d-flex align-items-center gap-3">
                                     <img className="line-blue" src={lineblack} alt="line-icon" />
                                     <p className="paragraph m-0">
-                                        <span className="paragraph-aboutes">Tailored Solutions</span>: Custom strategies designed to meet your unique business needs
+                                        <span className="paragraph-aboutes">Tailored Solutions </span>: Custom strategies designed to meet your unique business needs
                                     </p>
                                 </div>
                                 <div className="d-flex align-items-center mt-3 gap-3">
                                     <img className="line-blue" src={lineblack} alt="line-icon" />
                                     <p className="paragraph m-0">
-                                        <span className="paragraph-aboutes">Expert Execution</span>: Delivered by a skilled team with a passion for excellence
+                                        <span className="paragraph-aboutes">Expert Execution </span>: Delivered by a skilled team with a passion for excellence
                                     </p>
                                 </div>
                                 <div className="d-flex align-items-center mt-3 gap-3">
                                     <img className="line-blue" src={lineblack} alt="line-icon" />
                                     <p className="paragraph m-0">
-                                        <span className="paragraph-aboutes">Impact-Driven Results</span>: Focused on creating measurable value and success
+                                        <span className="paragraph-aboutes">Impact-Driven Results </span>: Focused on creating measurable value and success
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div>
-                        <hr className='dash-lines' />
+                    <div className='dash-header'>
+                        <hr className="dash-lined" />
                     </div>
 
-
-
-                    <div className="row">
-                        <div className="col-12 col-md-12">
+                    {/* New Accordion Row */}
+                    <div className="row mt-5">
+                        <div className="col-12">
                             <Accordion>
+                                {/* UX Design */}
                                 <Accordion.Item eventKey="0">
-                                    <Accordion.Header onClick={() => toggleAccordion(0)} className="custom-header">
-                                        <div className="ux-design d-flex justify-content-between">
-                                            <span className="ux-header">UX DESIGN</span>
-                                            <span className="icon">
-                                                {openKey === 0 ? "−" : "+"}
-                                            </span>
+                                    <Accordion.Header
+                                        onClick={() => toggleAccordion(0)}
+                                        className="custom-header"
+                                    >
+                                        <div className="d-flex justify-content-between w-100">
+                                            <span className="accordion-title">UX DESIGN</span>
+                                            <span className="icon">{openKey === 0 ? "−" : "+"}</span>
                                         </div>
                                     </Accordion.Header>
                                     <Accordion.Body>
-                                        <div className="row">
-                                            <div className="col-12 col-md-7">
-                                                <p className='paragraph-ui'>
-                                                    We craft user experiences that connect with your audience on a deeper level. By combining user research,
-                                                    wireframing, and prototyping, we ensure every interaction is seamless and intuitive. Our goal is to create
-                                                    experiences that delight users and drive results. Let us turn your vision into a user- <br /> centered masterpiece.
+                                        <div className="d-flex">
+                                            <div className="col-12 col-md-6">
+                                                <p className="paragraph-ux">
+                                                    We craft user experiences that connect with your audience on a
+                                                    deeper level. By combining user research, wireframing, and
+                                                    prototyping, we ensure every interaction is seamless and
+                                                    intuitive. Our goal is to create experiences that delight users
+                                                    and drive results. Let us turn your vision into a user-centered
+                                                    masterpiece.
                                                 </p>
                                             </div>
-                                            <div className="col-12 col-md-4" style={{ display: "flex", justifyContent: "end" }}>
-                                                <ul className='list-container'>
-                                                    <li>User Research</li>
-                                                    <li>Persona Development</li>
-                                                    <li>User Journey Mapping</li>
-                                                    <li>AI Validation</li>
+
+                                            <div className="col-12 col-md-5">
+                                                <ul className="list-container">
+                                                    <li>User Research </li>
+                                                    <li>Persona Development </li>
+                                                    <li>User Journey Mapping </li>
+                                                    <li>AI Wireframing</li>
                                                     <li>Wireframing</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </Accordion.Body>
                                 </Accordion.Item>
+
+                                <div className='dash-heads'>
+                                    <hr className="dash-lines" />
+                                </div>
+                                {/* UI Design */}
+                                <Accordion.Item eventKey="1">
+                                    <Accordion.Header
+                                        onClick={() => toggleAccordion(1)}
+                                        className="custom-header"
+                                    >
+                                        <div className="d-flex justify-content-between w-100">
+                                            <span className="accordion-title">UI DESIGN</span>
+                                            <span className="icon">{openKey === 1 ? "−" : "+"}</span>
+                                        </div>
+                                    </Accordion.Header>
+                                    <Accordion.Body>
+                                        <p>
+                                            Our UI design focuses on aesthetics and functionality. We create
+                                            visually stunning interfaces that align with your brand identity
+                                            and engage users effectively. Every color, font, and layout is
+                                            carefully chosen to enhance usability and deliver a consistent
+                                            design language.
+                                        </p>
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <div className='dash-heads'>
+                                    <hr className="dash-lines" />
+                                </div>
+                                {/* Web Development */}
+                                <Accordion.Item eventKey="2">
+                                    <Accordion.Header
+                                        onClick={() => toggleAccordion(2)}
+                                        className="custom-header"
+                                    >
+                                        <div className="d-flex justify-content-between w-100">
+                                            <span className="accordion-title">WEB DEVELOPMENT</span>
+                                            <span className="icon">{openKey === 2 ? "−" : "+"}</span>
+                                        </div>
+                                    </Accordion.Header>
+                                    <Accordion.Body>
+
+                                        <ul className="list-container">
+                                            <li>Frontend Development</li>
+                                            <li>Backend Development</li>
+                                            <li>API Integration</li>
+                                            <li>Responsive Design</li>
+                                        </ul>
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <div className='dash-heads'>
+                                    <hr className="dash-lines" />
+                                </div>
+                                {/* Digital Marketing */}
+                                <Accordion.Item eventKey="3">
+                                    <Accordion.Header
+                                        onClick={() => toggleAccordion(3)}
+                                        className="custom-header"
+                                    >
+                                        <div className="d-flex justify-content-between w-100">
+                                            <span className="accordion-title">DIGITAL MARKETING</span>
+                                            <span className="icon">{openKey === 3 ? "−" : "+"}</span>
+                                        </div>
+                                    </Accordion.Header>
+                                    <Accordion.Body>
+
+                                        <ul className="list-container">
+                                            <li>SEO Optimization</li>
+                                            <li>Content Marketing</li>
+                                            <li>Social Media Management</li>
+                                            <li>Pay-Per-Click Campaigns</li>
+                                        </ul>
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <div className='dash-heads'>
+                                    <hr className="dash-lines" />
+                                </div>
+                                {/* Content Creation */}
+                                <Accordion.Item eventKey="4">
+                                    <Accordion.Header
+                                        onClick={() => toggleAccordion(4)}
+                                        className="custom-header"
+                                    >
+                                        <div className="d-flex justify-content-between w-100">
+                                            <span className="accordion-title">CONTENT CREATION</span>
+                                            <span className="icon">{openKey === 4 ? "−" : "+"}</span>
+                                        </div>
+                                    </Accordion.Header>
+                                    <Accordion.Body>
+
+                                        <ul className="list-container">
+                                            <li>Blog Writing</li>
+                                            <li>Copywriting</li>
+                                            <li>Video Scriptwriting</li>
+                                            <li>Infographics</li>
+                                        </ul>
+                                    </Accordion.Body>
+                                </Accordion.Item>
                             </Accordion>
                         </div>
                     </div>
-
 
 
                 </div>

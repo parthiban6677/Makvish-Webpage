@@ -20,10 +20,10 @@ function Footer() {
                                 <div className=' personl-deteils'>
                                     <ul className='details-container'>
 
-                                        <div className="d-flex align-items-center ">
+                                        <div className="d-flex align-items-center   ">
                                             <img src={sendmail} alt="sendmail" className="mail-wrapper me-2" />
-                                            <li className="wrapper-details m-0">Veera@Makvishan.com</li>
-                                        </div>
+                                            <li className="wrapper-details m-0">veera@makvishan.com</li>
+                                        </div>  
 
                                         <div className="d-flex align-items-center mt-5">
                                             <img src={phone} alt="phone" className="phone-wrapper me-2" />
@@ -98,11 +98,12 @@ function Footer() {
                                 <h5 class="mak-tech ">Powered by Makvishan Technology</h5>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
             </div>
+
+          
         </div>
     )
 }

@@ -16,7 +16,7 @@ const Menubar = () => {
 
     return (
         <div>
-            <div className="container m-5">
+            <div className="container mt-5">
                 <div className="row align-items-center">
                     {/* Logo Section */}
                     <div className="col-6 col-md-4">
@@ -30,7 +30,7 @@ const Menubar = () => {
                     </div>
 
                     {/* Hamburger Menu for Mobile */}
-                    <div className="col-5 d-md-none text-end">
+                    <div className="col-6 d-md-none text-end">
                         <FaBars
                             size={24}
                             onClick={toggleMenu}

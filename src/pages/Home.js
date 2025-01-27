@@ -58,7 +58,7 @@ export const About = () => {
             {/* <section className="back-img"> */}
 
             <section id="home">
-                <div className="container m-5">
+                {/* <div className="container mt-5">
                     <div>
                         <div className="hero-title">
                             <h1>
@@ -84,14 +84,14 @@ export const About = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
             </section>
 
-            <section className="back-img">
+            {/* <section className="back-img"> */}
 
                 <section id='about' >
-                    <div className='container m-5'>
+                    <div className='container mt-5'>
                         <div className='row'>
                             <div className='col-12 col-md-6'>
                                 <div>
@@ -112,9 +112,9 @@ export const About = () => {
                         </div>
                     </div>
 
-                    <div className='container m-5'>
+                    <div className='container mt-5'>
                         <div className="row">
-                            <div className="col-12 col-md-3">
+                            <div className="col-12 col-md-6 col-lg-6 col-xl-3">
                                 <div className=" card about-card ">
                                     <div className='bulb-icon'>
                                         {/* <img src={bulb} alt="bulb" /> */}
@@ -127,7 +127,7 @@ export const About = () => {
 
                                 </div>
                             </div>
-                            <div className="col-12 col-md-3">
+                            <div className="col-12 col-md-6 col-lg-6 col-xl-3">
                                 <div className="card about-card">
                                     <div className='bulb-icon'>
                                         {/* <img src={adjustments_horizontal} alt='adjustments_horizontal' /> */}
@@ -140,7 +140,7 @@ export const About = () => {
 
                                 </div>
                             </div>
-                            <div className="col-12 col-md-3">
+                            <div className="col-12 col-md-6 col-lg-6 col-xl-3">
                                 <div className="card about-card">
                                     <div className='bulb-icon'>
                                         <img src={Quality_icon} className="card-img-top" alt="Quality_icon" />
@@ -153,7 +153,7 @@ export const About = () => {
                                 </div>
                             </div>
 
-                            <div className="col-12 col-md-3">
+                            <div className="col-12 col-md-6 col-lg-6 col-xl-3">
                                 <div className="card about-card">
                                     <div className='bulb-icon'>
                                         {/* <img src={Client_Centric_icon} className="card-img-top" alt="Client_Centric_icon" /> */}
@@ -173,6 +173,7 @@ export const About = () => {
                 </section>
 
                 {/* <About us Section 3> */}
+                <section className="back-img">
                 <section id="services">
                     <div className="container-fluid mt-5">
                         <div className="aboutus-backround">
@@ -365,7 +366,7 @@ export const About = () => {
 
 
                 <section id='portfolio'>
-                    <div className='container m-5'>
+                    <div className='container mt-5'>
                         <div className='row'>
                             <div className='col-12 col-md-6'>
                                 <div>
@@ -383,7 +384,7 @@ export const About = () => {
                         </div>
                     </div>
 
-                    <div className=" container tab-header m-5">
+                    <div className=" container tab-header mt-5">
                         <Carousel indicators={false} controls={false} autoplay={true}>
                             <Carousel.Item>
                                 <Tabs defaultActiveKey="1" id="tab-example" className='tab-content'>
@@ -406,7 +407,7 @@ export const About = () => {
                                             </div>
                                         </div>
 
-                                        <div className='row mt-4'>
+                                        <div className='row mt-3'>
                                             <div className='Col-12 col-md-4'>
                                                 <div>
                                                     <img src={Portfolio_img_04} alt='...' className='portfolio-img' />
@@ -446,7 +447,7 @@ export const About = () => {
                         </Carousel>
                     </div>
 
-                    <div className='m-4 text-center'>
+                    <div className='mt-5 text-center'>
                         <h1 className='see-more'>See More</h1>
                         {/* <img src={see_more_icon} alt='See More Icon' className="mx-auto d-block" /> */}
 
@@ -454,15 +455,13 @@ export const About = () => {
                             <img src={see_more_icon} alt="See More Icon" className="mx-auto d-block" />
                         </a>
 
-
-
                     </div>
 
                 </section>
 
                 <section id='team'>
 
-                    <div className='container m-5'>
+                    <div className='container mt-5'>
                         <div className='row'>
                             <div className='col-12 col-md-6'>
                                 <div>
@@ -480,9 +479,9 @@ export const About = () => {
                         </div>
                     </div>
 
-                    <div className='container m-5'>
+                    <div className='container mt-5'>
                         <div className='row'>
-                            <div className='col-12  col-md-6 col-lg-3'>
+                            <div className='col-12 col-md-6 col-lg-6 col-xl-3'>
                                 <div className="team-hero">
                                     <div className='team-img'>
                                         <img src={team_img_01} alt='' />
@@ -493,7 +492,7 @@ export const About = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-12 col-md-6 col-lg-3'>
+                            <div className='col-12 col-md-6 col-lg-6 col-xl-3'>
                                 <div>
                                     <div className='team-img'>
                                         <img src={team_img_01} alt='' />
@@ -504,7 +503,7 @@ export const About = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-12 col-md-6 col-lg-3'>
+                            <div className='col-12 col-md-6 col-lg-6 col-xl-3'>
                                 <div>
                                     <div className='team-img'>
                                         <img src={team_img_02} alt='' />
@@ -515,7 +514,7 @@ export const About = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-12 col-md-6 col-lg-3'>
+                            <div className='col-12 col-md-6 col-lg-6 col-xl-3'>
                                 <div>
                                     <div className='team-img'>
                                         <img src={team_img_02} alt='' />
@@ -531,10 +530,9 @@ export const About = () => {
 
                 </section>
 
-
                 <section id='blog'>
                     {/* <div className="team-section"> */}
-                    <div className='container m-5 team-section'>
+                    <div className='container mt-5 team-section'>
                         <div className='row'>
                             <div className='col-12 col-md-6'>
                                 <div>
@@ -596,7 +594,7 @@ export const About = () => {
                                         <textarea className="form-control form-message" id="message" name="message" placeholder='Your Message…' rows="4" required></textarea>
                                     </div>
 
-                                    <div className='mt-4'>
+                                    <div className='mt-5'>
                                         <button type="submit" className="btn btn-primary form-talk-btn">Let’s Talk</button>
                                     </div>
                                 </form>

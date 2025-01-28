@@ -299,9 +299,9 @@
 
 
 .back-img {
-    /* background-image: url('../assets/img/contact-back-img\ copy.png'); */
     background-image: url('../assets/img/contact-back-img\ copy.png');
-    max-width: 100%;
+    height: auto;
+    /* max-width: 100%; */
     /* width: 1366px; */
     /* height: 5674px; */
 }
@@ -497,7 +497,6 @@
     }
 
     .team-img {
-        /* position: relative; */
         text-align: center;
         max-width: 100%;
         width: 100%;
@@ -509,11 +508,28 @@
         margin-left: 30px;
     }
 
+    .back-img {
+        background-image: url('../assets/img/contact-back-img\ copy.png');
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        /* background: linear-gradient(#252B3B, #1668E6); */
+        /* background: linear-gradient(#FFFFFF, #F0F4FF); */
+    }
+
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 1024px) {
+
+    .about-card {
+        max-width: 100% !important;
+        width: 100% !important;
+        height: 380px !important;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 15px;
+    }
+
     .team-img {
-        /* position: relative; */
         text-align: center;
         max-width: 100%;
         width: 100%;
@@ -521,14 +537,29 @@
         margin-top: 15px;
     }
 
-    /* .team-content {
+    .team-content {
+        margin-left: 110px;
+    }
+
+}
+
+
+/* @media screen and (min-width: 320px) {
+    .team-img {
+        text-align: center;
+        max-width: 100%;
+        width: 100%;
+        height: 380px;
+        margin-top: 15px;
+    }
+
+    .team-content {
         margin-left: 30px;
-    } */
-}
+    }
+} */
 
-@media screen and (min-width: 375px) {
+/* @media screen and (min-width: 375px) {
     .team-img {
-        /* position: relative; */
         text-align: center;
         max-width: 100%;
         width: 100%;
@@ -536,12 +567,12 @@
         margin-top: 15px;
     }
 
-    /* .team-content {
+    .team-content {
         margin-left: 58px;
-    } */
-}
+    }
+} */
 
-@media screen and (min-width: 425px) {
+/* @media screen and (min-width: 425px) {
     .team-img {
         text-align: center;
         max-width: 100%;
@@ -550,10 +581,10 @@
         margin-top: 15px;
     }
 
-    /* .team-content {
+    .team-content {
         margin-left: 78px;
-    } */
-}
+    }
+} */
 
 /* background: linear-gradient(to right, #FAFAFA, #F0F4FF); */
 

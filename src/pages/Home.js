@@ -479,7 +479,7 @@ export const About = () => {
                         </div>
                     </div>
 
-                    <div className='container mt-5'>
+                    {/* <div className='container mt-5'>
                         <div className='row'>
                             <div className='col-12 col-md-6 col-lg-6 col-xl-3'>
                                 <div className="team-hero">
@@ -526,7 +526,7 @@ export const About = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                 </section>
 

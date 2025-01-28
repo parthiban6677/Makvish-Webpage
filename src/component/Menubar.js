@@ -30,7 +30,7 @@ const Menubar = () => {
                     </div>
 
                     {/* Hamburger Menu for Mobile */}
-                    <div className="col-6 d-md-none text-end">
+                    <div className="col-5 d-md-none text-end">
                         <FaBars
                             size={24}
                             onClick={toggleMenu}

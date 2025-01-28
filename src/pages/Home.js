@@ -514,7 +514,7 @@ export const About = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-12 col-md-6 col-lg-6 col-xl-3'>
+                            <div className='col-12 col-md-6 col-lg-3'>
                                 <div>
                                     <div className='team-img'>
                                         <img src={team_img_02} alt='' />

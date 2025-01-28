@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBars } from "react-icons/fa"; 
+import { FaBars } from "react-icons/fa";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
@@ -29,17 +29,18 @@ const Menubar = () => {
                         </Navbar.Brand>
                     </div>
 
-                    {/* Hamburger Menu for Mobile */}
-                    <div className="col-5 d-md-none text-end">
+
+                    <div className="col-5 d-md-none  d-md-block text-end">
                         <FaBars
                             size={24}
                             onClick={toggleMenu}
                             className="hamburger-icon"
+                            aria-expanded={isMenuOpen}
                         />
                     </div>
 
-                    {/* Navigation Links */}
-                    <div className={`col-12 col-md-8 ${isMenuOpen ? "d-block" : "d-none d-md-block"}`}>
+
+                    <div className={`col-12 col-md-8 ${isMenuOpen ? "d-none" : "d-none d-md-block"}`}>
                         <Nav className="me-auto flex-column flex-md-row text-end">
                             <Nav.Link className="navbar-link" href="#home">Home</Nav.Link>
                             <Nav.Link className="navbar-link" href="#about">About</Nav.Link>
@@ -55,7 +56,7 @@ const Menubar = () => {
                 </div>
             </div>
 
-            {/* Offcanvas for Mobile Menu */}
+
             <Offcanvas show={isMenuOpen} onHide={toggleMenu} placement="end">
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>Menu</Offcanvas.Title>

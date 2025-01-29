@@ -1,0 +1,108 @@
+
+
+.navbar-link {
+    color: var(--mak-slategray) !important;  
+    text-decoration: none; 
+    font-weight: 600 !important;        
+    position: relative;
+}
+
+.navbar-link:active, 
+.navbar-link:focus {
+    color: var(--mak-blue) !important;
+}
+
+.navbar-link:active::after,
+.navbar-link:focus::after {
+    content: ''; 
+    position: absolute;
+    top: 35px !important;
+    left: 45%; 
+    width: 6px;
+    height: 6px; 
+    background-color: var(--mak-blue);
+    border-radius: 100%;
+}
+
+.talk-btn{
+    font-weight: 600 !important;
+    color: var(--mak-white) !important;
+
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--mak-blue);
+
+    justify-content: end !important;
+    margin-left: auto !important; 
+    margin-right: 0 !important;   
+    display: block !important;   
+}
+
+.menu-talk-btn{
+    font-weight: 600 !important;
+    color: var(--mak-white) !important;
+
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--mak-blue);
+
+    justify-content: end !important;
+    /* margin-left: auto !important;  */
+    /* margin-right: 0 !important;    */
+    /* display: block !important;    */
+}
+
+/* Base styles for the logo and navbar links */
+.logo-img {
+    max-width: 150px;
+  }
+  
+  /* Navbar link styles */
+  .navbar-link {
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+  }
+
+  .container {
+    margin-top: 0 !important;
+}
+
+ @media screen and (max-width: 768px) {
+
+  .navbar-link:active::after,
+.navbar-link:focus::after {
+    content: ''; 
+    position: absolute;
+    top: 35px !important;
+    left: 10%; 
+    width: 6px;
+    height: 6px; 
+    background-color: var(--mak-blue);
+    border-radius: 100%;
+}
+
+ }
+
+ @media screen and (max-width: 1024px) {
+
+  .talk-btn{
+    font-weight: 600 !important;
+    color: var(--mak-white) !important;
+
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--mak-blue);
+
+    justify-content: end !important;
+    margin-left: auto !important; 
+    margin-right: 0 !important;   
+    display: block !important;   
+}
+  
+ }

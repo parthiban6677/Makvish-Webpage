@@ -25,6 +25,11 @@ import lineblack from '../assets/img/Group 22410@2x.png'
 import home01 from "../assets/img/home-01.png"
 import home02 from '../assets/img/home-02.png'
 import home03 from '../assets/img/home-03.png'
+import home04 from '../assets/img/home-04.png'
+import home05 from '../assets/img/home-05.png'
+import home06 from '../assets/img/home-06.png'
+import home07 from '../assets/img/home-07.png'
+import home08 from '../assets/img/home-08.png'
 
 
 import { IconBulb } from '@tabler/icons-react';
@@ -58,8 +63,8 @@ export const About = () => {
             {/* <section className="back-img"> */}
 
             <section id="home">
-                {/* <div className="container mt-5">
-                    <div>
+                <div className="container ">
+                    <div className="hero-section">
                         <div className="hero-title">
                             <h1>
                                 <span className="home-title">Elevate</span>
@@ -82,15 +87,31 @@ export const About = () => {
                             <div className="hero-img-03">
                                 <img src={home03} alt="home03" />
                             </div>
+                            <div className="hero-img-04">
+                                <img src={home04} alt="home04" />
+                            </div>
+                            <div className="hero-img-05">
+                                <img src={home05} alt="home05" />
+                            </div>
+                            <div className="hero-img-06">
+                                <img src={home06} alt="home06" />
+                            </div>
+                            <div className="hero-img-07">
+                                <img src={home07} alt="home07" />
+                            </div>
+                            <div className="hero-img-08">
+                                <img src={home08} alt="home08" />
+                            </div>
                         </div>
                     </div>
-                </div> */}
+                </div>
 
             </section>
 
             {/* <section className="back-img"> */}
 
                 <section id='about' >
+                    <div className="about-section">
                     <div className='container mt-5'>
                         <div className='row'>
                             <div className='col-12 col-md-6'>
@@ -168,6 +189,7 @@ export const About = () => {
                             </div>
 
                         </div>
+                    </div>
                     </div>
 
                 </section>
@@ -427,21 +449,7 @@ export const About = () => {
 
                                     </Tab>
 
-                                    <Tab eventKey="2" title="Branding">
-                                        Content for Branding
-                                    </Tab>
-
-                                    <Tab eventKey="3" title="Mobile App">
-                                        Content for Mobile App
-                                    </Tab>
-
-                                    <Tab eventKey="4" title="Web App">
-                                        Content for Web App
-                                    </Tab>
-
-                                    <Tab eventKey="5" title="Website">
-                                        Content for Website
-                                    </Tab>
+                                   
                                 </Tabs>
                             </Carousel.Item>
                         </Carousel>
@@ -479,7 +487,7 @@ export const About = () => {
                         </div>
                     </div>
 
-                    {/* <div className='container mt-5'>
+                    <div className='container mt-5'>
                         <div className='row'>
                             <div className='col-12 col-md-6 col-lg-6 col-xl-3'>
                                 <div className="team-hero">
@@ -514,7 +522,7 @@ export const About = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-12 col-md-6 col-lg-3'>
+                            <div className='col-12 col-md-6 col-lg-6 col-xl-3'>
                                 <div>
                                     <div className='team-img'>
                                         <img src={team_img_02} alt='' />
@@ -526,7 +534,7 @@ export const About = () => {
                                 </div>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
 
                 </section>
 
@@ -557,7 +565,7 @@ export const About = () => {
                         <div className='row mt-5'>
                             <div className='col-12 col-md-3'>
                                 <div>
-                                    <p className='cantact-desc'>
+                                    <p className='contact-desc'>
                                         We’re interested in <br /> Working together
                                     </p>
                                     <h1 className='see-more'>+91 8124161463</h1>
@@ -565,7 +573,7 @@ export const About = () => {
                             </div>
                             <div className='col-12 col-md-3'>
                                 <div>
-                                    <p className='cantact-desc'>
+                                    <p className='contact-desc'>
                                         Having a project in mind? <br /> Send a message to
                                     </p>
                                     <h1 className='see-more'>veera@makvishan.com</h1>

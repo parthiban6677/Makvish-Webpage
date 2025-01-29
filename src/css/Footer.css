@@ -1,5 +1,5 @@
-/* * Footer Scetion 7 */
-*/ .container-footer {
+
+ .container-footer {
     display: flex;
     justify-content: space-around;
 }

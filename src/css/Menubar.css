@@ -4,7 +4,7 @@
 }
 
 .navbar-logo {
-  padding-left: 14px;
+  padding: 22px 0px 0px 14px;
 }
 
 /* Mobile Menu (Initially Hidden Off-Screen) */
@@ -37,7 +37,7 @@
   font-size: 16px;
   color: var(--mak-black);
   cursor: pointer;
-  align-self: flex-start;
+  align-self: flex-end;
   margin-top: 18px;
 }
 
@@ -136,6 +136,10 @@
     height: 6px;
     background-color: var(--mak-blue);
     border-radius: 100%;
+  }
+
+  .navbar-logo {
+    padding: 0px;
   }
 
 }

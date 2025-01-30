@@ -104,6 +104,7 @@
     font-size: 14px;
     font-family: var(font-family);
     line-height: 30px;
+    margin-top: 30px;
 }
 
 .bulb-icon {
@@ -188,67 +189,6 @@
     font-weight: 500 !important;
     font-size: 16px;
     font-style: normal;
-}
-
-/* Remove border around the tab */
-.nav-tabs {
-    border: none !important;
-}
-
-/* Optional: You can remove the border on the active tab as well */
-.nav-tabs .nav-link.active {
-    border: none !important;
-    box-shadow: none !important;
-    color: var(--mak-blue) !important;
-    font-weight: 600 !important;
-    font-size: 18px;
-
-}
-
-/* Optional: Remove the border on individual tabs */
-.nav-tabs .nav-link {
-    border: none !important;
-    color: var(--mak-slategray);
-}
-
-/* Remove the border on hover for tab links */
-.nav-tabs .nav-link:hover {
-    border: none !important;
-    box-shadow: none !important;
-    color: var(--mak-slategray);
-}
-
-/* Optionally, remove border when the tab is active and hovered */
-.nav-tabs .nav-link.active:hover {
-    border: none !important;
-    box-shadow: none !important;
-    color: var(--mak-slategray);
-}
-
-
-
-/* Set the tab title color to slategray */
-.nav-tabs .nav-link {
-    color: var(--mak-slategray);
-    position: relative;
-    padding-bottom: 5px;
-}
-
-/* Add a bottom dot or underline to the active tab */
-.nav-tabs .nav-link.active {
-    color: var(--mak-blue) !important;
-}
-
-/* Add the bottom dot effect */
-.nav-tabs .nav-link.active::after {
-    content: '';
-    position: absolute;
-    left: 45%;
-    bottom: 0;
-    width: 4px;
-    border-radius: 100%;
-    height: 4px;
-    background-color: var(--mak-blue);
 }
 
 
@@ -449,11 +389,8 @@
     }
 
 
-    .back-img {
-        background-image: url('../assets/img/contact-back-img\ copy.png');
-        max-width: 100%;
-        width: 100%;
-        height: auto;
+     .portfolio-row-img{
+        margin-top: 0 !important;
     }
 
 }
@@ -510,9 +447,9 @@
         margin-top: 0;
     }
     
-    .portfolio-row-img{
+    /* .portfolio-row-img{
         margin-top: 0 !important;
-    }
+    } */
 }
 
 

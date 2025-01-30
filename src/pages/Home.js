@@ -3,15 +3,11 @@ import Footer from '../component/Footer';
 import Menubar from '../component/Menubar'
 import '../css/Home.css'
 import '../css/aboutes.css';
-import bulb from '../assets/img/bulb.svg'
-import adjustments_horizontal from '../assets/img/adjustments_horizontal.svg'
 import Quality_icon from '../assets/img/Quality_icon.svg'
-import Client_Centric_icon from '../assets/img/Client_Centric_icon.svg'
 import { Tab, Tabs, Carousel, } from 'react-bootstrap'
 import { Accordion } from 'react-bootstrap';
 
 
-import back from "../assets/img/contact-back-img copy.png"
 import Portfolio_img_01 from '../assets/img/Portfolio_img_01.png'
 import Portfolio_img_02 from '../assets/img/Portfolio_img_02.png'
 import Portfolio_img_03 from '../assets/img/Portfolio_img_03.png'
@@ -246,7 +242,7 @@ export const About = () => {
 
                             <div className="row mt-4">
                             
-                                <div >
+                                <div className="bottom-header" >
                                     <Accordion className="custom-accordion">
                                         <Accordion.Item eventKey="0">
                                             <Accordion.Header

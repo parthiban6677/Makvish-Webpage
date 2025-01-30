@@ -11,25 +11,25 @@ function Footer() {
     return (
         <div>
             {/* <Footer Section 7> */}
-            <div className='container-fluid mt-5 '>
+            <div className='container-fluid mt-5 bottom-head '>
                 <div className='footer-backround '>
                     <div className='row container-footer p-1'>
-                        <div className='col-12 col-md-3'>
-                            <div className='mt-5'>
+                        <div className='col-12 col-md-6 col-lg-3'>
+                            <div className='makvishan-top'>
                                 <img src={makvishanlogo} alt="makvishanlogo" className='mak-logo' />
-                                <div className=' personl-deteils'>
+                                <div className='personl-deteils'>
                                     <ul className='details-container'>
 
-                                        <div className="d-flex align-items-center   ">
+                                        <div className="d-flex align-items-center  mail-headr   ">
                                             <img src={sendmail} alt="sendmail" className="mail-wrapper me-2" />
                                             <li className="wrapper-details m-0">veera@makvishan.com</li>
-                                        </div>  
+                                        </div>
 
-                                        <div className="d-flex align-items-center mt-5">
+                                        <div className="d-flex align-items-center phone-header">
                                             <img src={phone} alt="phone" className="phone-wrapper me-2" />
                                             <li className="wrapper-details m-0">+91 8124161463</li>
                                         </div>
-                                        <div className="d-flex align-items-start mt-4">
+                                        <div className="d-flex align-items-start map-header">
                                             <img src={map} alt="map" className="location-icon me-2" />
                                             <li className="wrapper-detail m-0">
                                                 N0 45, VAO Nagar, Sandapet,
@@ -44,9 +44,9 @@ function Footer() {
                             </div>
                         </div>
 
-                        <div className='col-12 col-md-2 quick-container  '>
-                            <div className='mt-5 ' >
-                                <h4 className='quick-links'>QUICK LINKS</h4>
+                        <div className='col-12 col-md-6 col-lg-2   quick-container'>
+                            <div className=' quick-header ' >
+                                <h4 className='quick-link'>QUICK LINKS</h4>
                                 <div className='mt-4 ' >
                                     <ul className='container-links p-0'>
                                         <li>Home</li>
@@ -59,11 +59,11 @@ function Footer() {
                             </div>
                         </div>
 
-                        <div className='col-12 col-md-2 service-warper '>
-                            <div className='mt-5' >
-                                <h4 className='quick-links'>SERVICES</h4>
-                                <div className='service-container '>
-                                    <ul className='container-links  p-0'>
+                        <div className='col-12 col-md-5 col-lg-2 service-warper '>
+                            <div className='mt-5 services-header' >
+                                <h4 className='quick-linked'>SERVICES</h4>
+                                <div className='service-containers '>
+                                    <ul className='container-linked  p-0'>
                                         <li>UI Design</li>
                                         <li>UX Design</li>
                                         <li>Graphic Design</li>
@@ -75,8 +75,8 @@ function Footer() {
 
                         </div>
 
-                        <div className='col-12 col-md-4 join-letter'>
-                            <div className='ournews-contant'>
+                        <div className='col-12 col-md-6 col-lg-4 join-letter'>
+                            <div className='ournews-contaniner'>
                                 <div>
                                     <h4 className='letter' >JOIN OUR NEWSLETTER</h4>
                                 </div>
@@ -91,6 +91,7 @@ function Footer() {
                             </div>
 
                         </div>
+
                         <div class="footer-container">
                             <hr class="row-line" />
                             <div class="c-footer  ">
@@ -103,7 +104,7 @@ function Footer() {
 
             </div>
 
-          
+
         </div>
     )
 }

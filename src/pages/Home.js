@@ -60,7 +60,7 @@ export const About = () => {
         <>
 
             <Menubar></Menubar>
-            {/* <section className="back-img"> */}
+           
 
             <section id="home">
                 <div className="container ">
@@ -108,8 +108,6 @@ export const About = () => {
 
             </section>
 
-            {/* <section className="back-img"> */}
-
                 <section id='about' >
                     <div className="about-section">
                     <div className='container mt-5'>
@@ -133,12 +131,12 @@ export const About = () => {
                         </div>
                     </div>
 
-                    <div className='container mt-5'>
+                    <div className='container '>
                         <div className="row">
-                            <div className="col-12 col-md-6 col-lg-6 col-xl-3">
+                            <div className="col-12 col-md-3">
                                 <div className=" card about-card ">
                                     <div className='bulb-icon'>
-                                        {/* <img src={bulb} alt="bulb" /> */}
+                                  
                                         <IconBulb stroke={2} />
                                     </div>
                                     <div className="card-body">
@@ -148,10 +146,10 @@ export const About = () => {
 
                                 </div>
                             </div>
-                            <div className="col-12 col-md-6 col-lg-6 col-xl-3">
+                            <div className="col-12 col-md-3">
                                 <div className="card about-card">
                                     <div className='bulb-icon'>
-                                        {/* <img src={adjustments_horizontal} alt='adjustments_horizontal' /> */}
+                                     
                                         <IconAdjustmentsHorizontal stroke={2} />
                                     </div>
                                     <div className="card-body">
@@ -161,7 +159,7 @@ export const About = () => {
 
                                 </div>
                             </div>
-                            <div className="col-12 col-md-6 col-lg-6 col-xl-3">
+                            <div className="col-12 col-md-3">
                                 <div className="card about-card">
                                     <div className='bulb-icon'>
                                         <img src={Quality_icon} className="card-img-top" alt="Quality_icon" />
@@ -174,10 +172,10 @@ export const About = () => {
                                 </div>
                             </div>
 
-                            <div className="col-12 col-md-6 col-lg-6 col-xl-3">
+                            <div className="col-12 col-md-3">
                                 <div className="card about-card">
                                     <div className='bulb-icon'>
-                                        {/* <img src={Client_Centric_icon} className="card-img-top" alt="Client_Centric_icon" /> */}
+                                      
                                         <IconUserScan stroke={2} />
                                     </div>
                                     <div className="card-body">
@@ -194,7 +192,9 @@ export const About = () => {
 
                 </section>
 
-                {/* <About us Section 3> */}
+
+
+              
                 <section className="back-img">
                 <section id="services">
                     <div className="container-fluid mt-5">
@@ -204,9 +204,8 @@ export const About = () => {
                                     <div className="aboutus-warper">
                                         <h5 className="aboutus">ABOUT US</h5>
                                         <div className="mt-3">
-                                            <h2>
-                                                <span className="what-warper">What</span>
-                                                <span className="bring-container">We Bring</span>
+                                            <h2 className="header-conatiner">
+                                                <span className="what-warper">What</span><span className="bring-container">We Bring</span>
                                             </h2>
                                             <h2 className="header-table">to the Table</h2>
                                         </div>
@@ -241,8 +240,12 @@ export const About = () => {
                                 </div>
                             </div>
 
+                        <div className="dash-top">
+                            <hr className="dash-row" />
+                        </div>
+
                             <div className="row mt-4">
-                                {/* Accordion Section */}
+                            
                                 <div >
                                     <Accordion className="custom-accordion">
                                         <Accordion.Item eventKey="0">
@@ -256,7 +259,7 @@ export const About = () => {
                                                 </div>
                                             </Accordion.Header>
                                             <Accordion.Body>
-                                                <div className="d-flex">
+                                                <div className="warper-header">
                                                     <div className="col-12 col-md-6">
                                                         <p className="paragraph-ux">
                                                             We craft user experiences that connect with your audience on a
@@ -268,15 +271,18 @@ export const About = () => {
                                                         </p>
                                                     </div>
 
-                                                    <div className="col-12 col-md-5">
-                                                        <ul className="list-container">
+                                                    <div className="col-12 col-md-5 header-list ">
+                                                       <div className="orderlist-head">
+                                                       <ul className="list-container">
                                                             <li>User Research </li>
                                                             <li>Persona Development </li>
                                                             <li>User Journey Mapping </li>
                                                             <li>AI Wireframing</li>
                                                             <li>Wireframing</li>
                                                         </ul>
+                                                       </div>
                                                     </div>
+
                                                 </div>
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -386,9 +392,8 @@ export const About = () => {
                     </div>
                 </section>
 
-
                 <section id='portfolio'>
-                    <div className='container mt-5'>
+                    <div className='container '>
                         <div className='row'>
                             <div className='col-12 col-md-6'>
                                 <div>
@@ -406,7 +411,7 @@ export const About = () => {
                         </div>
                     </div>
 
-                    <div className=" container tab-header mt-5">
+                    <div className=" container tab-header ">
                         <Carousel indicators={false} controls={false} autoplay={true}>
                             <Carousel.Item>
                                 <Tabs defaultActiveKey="1" id="tab-example" className='tab-content'>
@@ -429,7 +434,7 @@ export const About = () => {
                                             </div>
                                         </div>
 
-                                        <div className='row mt-3'>
+                                        <div className='row mt-4'>
                                             <div className='Col-12 col-md-4'>
                                                 <div>
                                                     <img src={Portfolio_img_04} alt='...' className='portfolio-img' />
@@ -455,13 +460,15 @@ export const About = () => {
                         </Carousel>
                     </div>
 
-                    <div className='mt-5 text-center'>
+                    <div className='m-4 text-center'>
                         <h1 className='see-more'>See More</h1>
-                        {/* <img src={see_more_icon} alt='See More Icon' className="mx-auto d-block" /> */}
+                     
 
                         <a href="#team" >
                             <img src={see_more_icon} alt="See More Icon" className="mx-auto d-block" />
                         </a>
+
+
 
                     </div>
 
@@ -469,7 +476,7 @@ export const About = () => {
 
                 <section id='team'>
 
-                    <div className='container mt-5'>
+                    <div className='container'>
                         <div className='row'>
                             <div className='col-12 col-md-6'>
                                 <div>
@@ -487,9 +494,9 @@ export const About = () => {
                         </div>
                     </div>
 
-                    <div className='container mt-5'>
+                    <div className='container '>
                         <div className='row'>
-                            <div className='col-12 col-md-6 col-lg-6 col-xl-3'>
+                            <div className='col-12  col-md-6 col-lg-3'>
                                 <div className="team-hero">
                                     <div className='team-img'>
                                         <img src={team_img_01} alt='' />
@@ -500,7 +507,7 @@ export const About = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-12 col-md-6 col-lg-6 col-xl-3'>
+                            <div className='col-12 col-md-6 col-lg-3'>
                                 <div>
                                     <div className='team-img'>
                                         <img src={team_img_01} alt='' />
@@ -511,7 +518,7 @@ export const About = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-12 col-md-6 col-lg-6 col-xl-3'>
+                            <div className='col-12 col-md-6 col-lg-3'>
                                 <div>
                                     <div className='team-img'>
                                         <img src={team_img_02} alt='' />
@@ -522,7 +529,7 @@ export const About = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-12 col-md-6 col-lg-6 col-xl-3'>
+                            <div className='col-12 col-md-6 col-lg-3'>
                                 <div>
                                     <div className='team-img'>
                                         <img src={team_img_02} alt='' />
@@ -535,12 +542,10 @@ export const About = () => {
                             </div>
                         </div>
                     </div>
-
                 </section>
-
-                <section id='blog'>
-                    {/* <div className="team-section"> */}
-                    <div className='container mt-5 team-section'>
+                {  <section id='blog'>
+                
+                    <div className='container  team-section'>
                         <div className='row'>
                             <div className='col-12 col-md-6'>
                                 <div>
@@ -559,9 +564,7 @@ export const About = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* </div> */}
-
-                        {/* <div className='container mt-5'> */}
+                     
                         <div className='row mt-5'>
                             <div className='col-12 col-md-3'>
                                 <div>
@@ -602,17 +605,18 @@ export const About = () => {
                                         <textarea className="form-control form-message" id="message" name="message" placeholder='Your Message…' rows="4" required></textarea>
                                     </div>
 
-                                    <div className='mt-5'>
+                                    <div className='mt-4'>
                                         <button type="submit" className="btn btn-primary form-talk-btn">Let’s Talk</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
-                    {/* </div> */}
-                </section>
+              
+                </section> }
+         
 
-                <Footer />
+            <Footer />
             </section>
         </>
     )

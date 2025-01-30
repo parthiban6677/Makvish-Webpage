@@ -11,7 +11,8 @@ import { Tab, Tabs, Carousel, } from 'react-bootstrap'
 import { Accordion } from 'react-bootstrap';
 
 
-import back from "../assets/img/contact-back-img copy.png"
+
+// import back from "../assets/img/contact-back-img copy.png"
 import Portfolio_img_01 from '../assets/img/Portfolio_img_01.png'
 import Portfolio_img_02 from '../assets/img/Portfolio_img_02.png'
 import Portfolio_img_03 from '../assets/img/Portfolio_img_03.png'
@@ -35,10 +36,6 @@ import home08 from '../assets/img/home-08.png'
 import { IconBulb } from '@tabler/icons-react';
 import { IconAdjustmentsHorizontal } from '@tabler/icons-react';
 import { IconUserScan } from '@tabler/icons-react';
-
-
-
-
 
 
 
@@ -110,8 +107,8 @@ export const About = () => {
 
             {/* <section className="back-img"> */}
 
-                <section id='about' >
-                    <div className="about-section">
+            <section id='about' >
+                <div className="about-section">
                     <div className='container mt-5'>
                         <div className='row'>
                             <div className='col-12 col-md-6'>
@@ -138,8 +135,8 @@ export const About = () => {
                             <div className="col-12 col-md-6 col-lg-6 col-xl-3">
                                 <div className=" card about-card ">
                                     <div className='bulb-icon'>
-                                        {/* <img src={bulb} alt="bulb" /> */}
-                                        <IconBulb stroke={2} />
+                                        <img src={bulb} alt="bulb" />
+                                        {/* <IconBulb stroke={2} /> */}
                                     </div>
                                     <div className="card-body">
                                         <h5 className="card-title">Innovation</h5>
@@ -150,9 +147,9 @@ export const About = () => {
                             </div>
                             <div className="col-12 col-md-6 col-lg-6 col-xl-3">
                                 <div className="card about-card">
-                                    <div className='bulb-icon'>
-                                        {/* <img src={adjustments_horizontal} alt='adjustments_horizontal' /> */}
-                                        <IconAdjustmentsHorizontal stroke={2} />
+                                    <div className='horizontal-icon'>
+                                        <img src={adjustments_horizontal} alt='adjustments_horizontal' />
+                                        {/* <IconAdjustmentsHorizontal stroke={2} /> */}
                                     </div>
                                     <div className="card-body">
                                         <h5 className="card-title">Customization</h5>
@@ -177,8 +174,8 @@ export const About = () => {
                             <div className="col-12 col-md-6 col-lg-6 col-xl-3">
                                 <div className="card about-card">
                                     <div className='bulb-icon'>
-                                        {/* <img src={Client_Centric_icon} className="card-img-top" alt="Client_Centric_icon" /> */}
-                                        <IconUserScan stroke={2} />
+                                        <img src={Client_Centric_icon} className="card-img-top" alt="Client_Centric_icon" />
+                                        {/* <IconUserScan stroke={2} /> */}
                                     </div>
                                     <div className="card-body">
                                         <h5 className="card-title">Client-Centric</h5>
@@ -190,12 +187,12 @@ export const About = () => {
 
                         </div>
                     </div>
-                    </div>
+                </div>
 
-                </section>
+            </section>
 
-                {/* <About us Section 3> */}
-                <section className="back-img">
+            {/* <About us Section 3> */}
+            <section className="back-img">
                 <section id="services">
                     <div className="container-fluid mt-5">
                         <div className="aboutus-backround">
@@ -204,15 +201,13 @@ export const About = () => {
                                     <div className="aboutus-warper">
                                         <h5 className="aboutus">ABOUT US</h5>
                                         <div className="mt-3">
-                                            <h2>
-                                                <span className="what-warper">What</span>
-                                                <span className="bring-container">We Bring</span>
+                                            <h2 className="header-conatiner">
+                                                <span className="what-warper">What</span><span className="bring-container">We Bring</span>
                                             </h2>
                                             <h2 className="header-table">to the Table</h2>
                                         </div>
                                     </div>
                                 </div>
-
                                 <div className="col-12 col-md-6 paragraph-left">
                                     <p className="paragraph-head">
                                         Our services are designed to empower your business with innovative and tailored solutions. With a focus on
@@ -241,34 +236,35 @@ export const About = () => {
                                 </div>
                             </div>
 
-                            <div className="row mt-4">
-                                {/* Accordion Section */}
-                                <div >
-                                    <Accordion className="custom-accordion">
-                                        <Accordion.Item eventKey="0">
-                                            <Accordion.Header
-                                                onClick={() => toggleAccordion(0)}
-                                                className="custom-header"
-                                            >
-                                                <div className="d-flex justify-content-between w-100">
-                                                    <span className="accordion-title">UX DESIGN</span>
-                                                    <span className="icon">{openKey === 0 ? "−" : "+"}</span>
+                            <div className="dash-top">
+                                <hr className="dash-row" />
+                            </div>
+                            <div >
+                                <Accordion className="custom-accordion">
+                                    <Accordion.Item eventKey="0">
+                                        <Accordion.Header
+                                            onClick={() => toggleAccordion(0)}
+                                            className="custom-header"
+                                        >
+                                            <div className="d-flex justify-content-between w-100">
+                                                <span className="accordion-title">UX DESIGN</span>
+                                                <span className="icon">{openKey === 0 ? "−" : "+"}</span>
+                                            </div>
+                                        </Accordion.Header>
+                                        <Accordion.Body>
+                                            <div className="warper-header">
+                                                <div className="col-12 col-md-6">
+                                                    <p className="paragraph-ux">
+                                                        We craft user experiences that connect with your audience on a
+                                                        deeper level. By combining user research, wireframing, and
+                                                        prototyping, we ensure every interaction is seamless and
+                                                        intuitive. Our goal is to create experiences that delight users
+                                                        and drive results. Let us turn your vision into a user-centered
+                                                        masterpiece.
+                                                    </p>
                                                 </div>
-                                            </Accordion.Header>
-                                            <Accordion.Body>
-                                                <div className="d-flex">
-                                                    <div className="col-12 col-md-6">
-                                                        <p className="paragraph-ux">
-                                                            We craft user experiences that connect with your audience on a
-                                                            deeper level. By combining user research, wireframing, and
-                                                            prototyping, we ensure every interaction is seamless and
-                                                            intuitive. Our goal is to create experiences that delight users
-                                                            and drive results. Let us turn your vision into a user-centered
-                                                            masterpiece.
-                                                        </p>
-                                                    </div>
-
-                                                    <div className="col-12 col-md-5">
+                                                <div className="col-12 col-md-5 header-list ">
+                                                    <div className="orderlist-head">
                                                         <ul className="list-container">
                                                             <li>User Research </li>
                                                             <li>Persona Development </li>
@@ -278,114 +274,112 @@ export const About = () => {
                                                         </ul>
                                                     </div>
                                                 </div>
-                                            </Accordion.Body>
-                                        </Accordion.Item>
+                                            </div>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
 
-                                        <div className='dash-heads'>
-                                            <hr className="dash-lines" />
-                                        </div>
-                                        {/* UI Design */}
-                                        <Accordion.Item eventKey="1">
-                                            <Accordion.Header
-                                                onClick={() => toggleAccordion(1)}
-                                                className="custom-header"
-                                            >
-                                                <div className="d-flex justify-content-between w-100">
-                                                    <span className="accordion-title">UI DESIGN</span>
-                                                    <span className="icon">{openKey === 1 ? "−" : "+"}</span>
-                                                </div>
-                                            </Accordion.Header>
-                                            <Accordion.Body>
-                                                <p>
-                                                    Our UI design focuses on aesthetics and functionality. We create
-                                                    visually stunning interfaces that align with your brand identity
-                                                    and engage users effectively. Every color, font, and layout is
-                                                    carefully chosen to enhance usability and deliver a consistent
-                                                    design language.
-                                                </p>
-                                            </Accordion.Body>
-                                        </Accordion.Item>
-                                        <div className='dash-heads'>
-                                            <hr className="dash-lines" />
-                                        </div>
-                                        {/* Web Development */}
-                                        <Accordion.Item eventKey="2">
-                                            <Accordion.Header
-                                                onClick={() => toggleAccordion(2)}
-                                                className="custom-header"
-                                            >
-                                                <div className="d-flex justify-content-between w-100">
-                                                    <span className="accordion-title">WEB DEVELOPMENT</span>
-                                                    <span className="icon">{openKey === 2 ? "−" : "+"}</span>
-                                                </div>
-                                            </Accordion.Header>
-                                            <Accordion.Body>
+                                    <div className='dash-heads'>
+                                        <hr className="dash-lines" />
+                                    </div>
+                                    {/* UI Design */}
+                                    <Accordion.Item eventKey="1">
+                                        <Accordion.Header
+                                            onClick={() => toggleAccordion(1)}
+                                            className="custom-header"
+                                        >
+                                            <div className="d-flex justify-content-between w-100">
+                                                <span className="accordion-title">UI DESIGN</span>
+                                                <span className="icon">{openKey === 1 ? "−" : "+"}</span>
+                                            </div>
+                                        </Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>
+                                                Our UI design focuses on aesthetics and functionality. We create
+                                                visually stunning interfaces that align with your brand identity
+                                                and engage users effectively. Every color, font, and layout is
+                                                carefully chosen to enhance usability and deliver a consistent
+                                                design language.
+                                            </p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <div className='dash-heads'>
+                                        <hr className="dash-lines" />
+                                    </div>
+                                    {/* Web Development */}
+                                    <Accordion.Item eventKey="2">
+                                        <Accordion.Header
+                                            onClick={() => toggleAccordion(2)}
+                                            className="custom-header"
+                                        >
+                                            <div className="d-flex justify-content-between w-100">
+                                                <span className="accordion-title">WEB DEVELOPMENT</span>
+                                                <span className="icon">{openKey === 2 ? "−" : "+"}</span>
+                                            </div>
+                                        </Accordion.Header>
+                                        <Accordion.Body>
+                                            <ul className="list-container">
+                                                <li>Frontend Development</li>
+                                                <li>Backend Development</li>
+                                                <li>API Integration</li>
+                                                <li>Responsive Design</li>
+                                            </ul>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <div className='dash-heads'>
+                                        <hr className="dash-lines" />
+                                    </div>
+                                    {/* Digital Marketing */}
+                                    <Accordion.Item eventKey="3">
+                                        <Accordion.Header
+                                            onClick={() => toggleAccordion(3)}
+                                            className="custom-header"
+                                        >
+                                            <div className="d-flex justify-content-between w-100">
+                                                <span className="accordion-title">DIGITAL MARKETING</span>
+                                                <span className="icon">{openKey === 3 ? "−" : "+"}</span>
+                                            </div>
+                                        </Accordion.Header>
+                                        <Accordion.Body>
 
-                                                <ul className="list-container">
-                                                    <li>Frontend Development</li>
-                                                    <li>Backend Development</li>
-                                                    <li>API Integration</li>
-                                                    <li>Responsive Design</li>
-                                                </ul>
-                                            </Accordion.Body>
-                                        </Accordion.Item>
-                                        <div className='dash-heads'>
-                                            <hr className="dash-lines" />
-                                        </div>
-                                        {/* Digital Marketing */}
-                                        <Accordion.Item eventKey="3">
-                                            <Accordion.Header
-                                                onClick={() => toggleAccordion(3)}
-                                                className="custom-header"
-                                            >
-                                                <div className="d-flex justify-content-between w-100">
-                                                    <span className="accordion-title">DIGITAL MARKETING</span>
-                                                    <span className="icon">{openKey === 3 ? "−" : "+"}</span>
-                                                </div>
-                                            </Accordion.Header>
-                                            <Accordion.Body>
-
-                                                <ul className="list-container">
-                                                    <li>SEO Optimization</li>
-                                                    <li>Content Marketing</li>
-                                                    <li>Social Media Management</li>
-                                                    <li>Pay-Per-Click Campaigns</li>
-                                                </ul>
-                                            </Accordion.Body>
-                                        </Accordion.Item>
-                                        <div className='dash-heads'>
-                                            <hr className="dash-lines" />
-                                        </div>
-                                        {/* Content Creation */}
-                                        <Accordion.Item eventKey="4">
-                                            <Accordion.Header
-                                                onClick={() => toggleAccordion(4)}
-                                                className="custom-header"
-                                            >
-                                                <div className="d-flex justify-content-between w-100">
-                                                    <span className="accordion-title">CONTENT CREATION</span>
-                                                    <span className="icon">{openKey === 4 ? "−" : "+"}</span>
-                                                </div>
-                                            </Accordion.Header>
-                                            <Accordion.Body>
-
-                                                <ul className="list-container">
-                                                    <li>Blog Writing</li>
-                                                    <li>Copywriting</li>
-                                                    <li>Video Scriptwriting</li>
-                                                    <li>Infographics</li>
-                                                </ul>
-                                            </Accordion.Body>
-                                        </Accordion.Item>
-                                    </Accordion>
-                                </div>
+                                            <ul className="list-container">
+                                                <li>SEO Optimization</li>
+                                                <li>Content Marketing</li>
+                                                <li>Social Media Management</li>
+                                                <li>Pay-Per-Click Campaigns</li>
+                                            </ul>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <div className='dash-heads'>
+                                        <hr className="dash-lines" />
+                                    </div>
+                                    {/* Content Creation */}
+                                    <Accordion.Item eventKey="4">
+                                        <Accordion.Header
+                                            onClick={() => toggleAccordion(4)}
+                                            className="custom-header"
+                                        >
+                                            <div className="d-flex justify-content-between w-100">
+                                                <span className="accordion-title">CONTENT CREATION</span>
+                                                <span className="icon">{openKey === 4 ? "−" : "+"}</span>
+                                            </div>
+                                        </Accordion.Header>
+                                        <Accordion.Body>
+                                            <ul className="list-container">
+                                                <li>Blog Writing</li>
+                                                <li>Copywriting</li>
+                                                <li>Video Scriptwriting</li>
+                                                <li>Infographics</li>
+                                            </ul>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </Accordion>
                             </div>
-
-
                         </div>
-                    </div>
-                </section>
 
+
+                    </div>
+                    {/* </div> */}
+                </section>
 
                 <section id='portfolio'>
                     <div className='container mt-5'>
@@ -407,10 +401,10 @@ export const About = () => {
                     </div>
 
                     <div className=" container tab-header mt-5">
-                        <Carousel indicators={false} controls={false} autoplay={true}>
-                            <Carousel.Item>
-                                <Tabs defaultActiveKey="1" id="tab-example" className='tab-content'>
-                                    <Tab eventKey="1" title="All" className='mt-4'>
+                        {/* <Carousel indicators={false} controls={false} autoplay={true}> */}
+                            {/* <Carousel.Item> */}
+                                {/* <Tabs defaultActiveKey="1" id="tab-example" className='tab-content'> */}
+                                    {/* <Tab eventKey="1"  className='mt-4'> */}
                                         <div className='row'>
                                             <div className='Col-12 col-md-4'>
                                                 <div>
@@ -429,7 +423,7 @@ export const About = () => {
                                             </div>
                                         </div>
 
-                                        <div className='row mt-3'>
+                                        <div className='row portfolio-row-img'>
                                             <div className='Col-12 col-md-4'>
                                                 <div>
                                                     <img src={Portfolio_img_04} alt='...' className='portfolio-img' />
@@ -447,17 +441,16 @@ export const About = () => {
                                             </div>
                                         </div>
 
-                                    </Tab>
+                                    {/* </Tab> */}
 
-                                   
-                                </Tabs>
-                            </Carousel.Item>
-                        </Carousel>
+
+                                {/* </Tabs> */}
+                            {/* </Carousel.Item> */}
+                        {/* </Carousel> */}
                     </div>
 
                     <div className='mt-5 text-center'>
                         <h1 className='see-more'>See More</h1>
-                        {/* <img src={see_more_icon} alt='See More Icon' className="mx-auto d-block" /> */}
 
                         <a href="#team" >
                             <img src={see_more_icon} alt="See More Icon" className="mx-auto d-block" />
@@ -491,8 +484,8 @@ export const About = () => {
                         <div className='row'>
                             <div className='col-12 col-md-6 col-lg-6 col-xl-3'>
                                 <div className="team-hero">
-                                    <div className='team-img'>
-                                        <img src={team_img_01} alt='' />
+                                    <div>
+                                        <img className="team-img" src={team_img_01} alt='' />
                                     </div>
                                     <div className='team-content'>
                                         <h3 className='teams-name'>Indumathi</h3>
@@ -502,8 +495,8 @@ export const About = () => {
                             </div>
                             <div className='col-12 col-md-6 col-lg-6 col-xl-3'>
                                 <div>
-                                    <div className='team-img'>
-                                        <img src={team_img_01} alt='' />
+                                    <div>
+                                        <img className="team-img" src={team_img_01} alt='' />
                                     </div>
                                     <div className='team-content'>
                                         <h3 className='teams-name'>Veeramani</h3>
@@ -513,8 +506,8 @@ export const About = () => {
                             </div>
                             <div className='col-12 col-md-6 col-lg-6 col-xl-3'>
                                 <div>
-                                    <div className='team-img'>
-                                        <img src={team_img_02} alt='' />
+                                    <div>
+                                        <img className="team-img" src={team_img_02} alt='' />
                                     </div>
                                     <div className='team-content'>
                                         <h3 className='teams-name'>Suthakar</h3>
@@ -524,8 +517,8 @@ export const About = () => {
                             </div>
                             <div className='col-12 col-md-6 col-lg-6 col-xl-3'>
                                 <div>
-                                    <div className='team-img'>
-                                        <img src={team_img_02} alt='' />
+                                    <div>
+                                        <img className="team-img" src={team_img_02} alt='' />
                                     </div>
                                     <div className='team-content'>
                                         <h3 className='teams-name'>Suthakar</h3>

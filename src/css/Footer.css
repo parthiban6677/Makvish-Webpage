@@ -1,9 +1,12 @@
-
- .container-footer {
+/* * Footer Scetion 7 */
+.container-footer {
     display: flex;
     justify-content: space-around;
 }
 
+.bottom-head{
+    padding-bottom: 30px;
+}
 
 
 .footer-backround {
@@ -25,8 +28,17 @@
 
 }
 
+.container-linked {
+    color: var(--mak-sky-blue);
+    list-style: none;
+    line-height: 40px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
 .details-container {
     color: var(--mak-sky-blue);
+
 }
 
 .warper-details {
@@ -35,6 +47,19 @@
 }
 
 .quick-links {
+    color: var(--mak-white);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quick-linked {
+    color: var(--mak-white);
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.quick-link {
     color: var(--mak-white);
     font-size: 20px;
     font-weight: 600;
@@ -70,12 +95,30 @@
     width: 18px;
     height: 18px;
     opacity: 0.7;
-    margin-top: 0px;
+    margin-top: 5px;
+}
+
+.phone-header {
+    margin-top: 45px;
+}
+
+.map-header {
+    margin-top: 33px;
+}
+
+.mail-headr {
+    margin-top: 20px;
+}
+
+
+.makvishan-top {
+    margin-top: 49px;
 }
 
 .wrapper-details {
     font-size: 14px;
     list-style: none;
+
 }
 
 .me-2 {
@@ -83,7 +126,7 @@
 }
 
 .personl-deteils {
-    margin-top: 37px;
+    margin-top: 33px;
 }
 
 .d-flex {
@@ -137,6 +180,11 @@
     margin-top: 24px;
 }
 
+.service-contained {
+    margin-top: 24px;
+}
+
+
 .quick-right {
     margin-right: 5rem;
 }
@@ -176,8 +224,8 @@
     margin-top: 28px;
 }
 
-.ournews-contant {
-    margin-top: 47.3px;
+.ournews-contaniner {
+    margin-top: 49px;
 }
 
 .join-letter {
@@ -262,8 +310,6 @@
     }
 
     .lapel-container {
-
-
         align-items: center;
 
     }
@@ -277,9 +323,8 @@
         height: 30px;
         pointer-events: none;
         background-color: rgb(255, 128, 0);
-        border-radius: 10px;
         filter: invert(1);
-       
+
 
     }
 }
@@ -322,17 +367,17 @@
     margin-left: 35px;
 }
 
+.quick-header {
+    margin-top: 49px;
+}
+
+.services-header {
+    margin-top: 49px;
+}
 
 
 
 @media (max-width: 768px) {
-    .container-footer {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-
-    }
-
     .footer-backround {
         border-radius: 15px;
     }
@@ -340,18 +385,32 @@
     .mak-logo {
         width: 150px;
         height: auto;
-        ;
-
         text-align: center;
     }
 
-    .quick-right,
-    .quick-container,
-    .service-container,
-    .join-letter,
+    .quick-container {
+        margin: 0;
+
+    }
+
     .service-warper {
         margin: 0;
-        text-align: center;
+
+
+    }
+
+    .service-container {
+        padding-left: 40px;
+    }
+
+    .quick-links {
+        padding-left: 40px;
+    }
+
+    .join-letter {
+        margin: 0;
+        text-align: start;
+        margin-left: 60px;
     }
 
     .contant-warper,
@@ -370,15 +429,13 @@
 
     .lapel-warper {
         width: 100%;
-        
+
     }
 
     .input-icon {
         right: 15px;
         width: 25px;
         height: 25px;
-
-       
     }
 
     .row-line {
@@ -391,10 +448,16 @@
         text-align: center;
     }
 
+  
     .copyrights,
     .mak-tech {
         margin: 0;
         font-size: 13px;
+    }
+
+
+    .services-header {
+        padding-left: 40px;
     }
 }
 
@@ -411,13 +474,60 @@
         height: auto;
     }
 
+
+
+    .letter {
+        text-align: center;
+    }
+
+    .join-letter {
+        margin-left: 0;
+    }
+
+    .contant-warper {
+        text-align: center;
+    }
+
     .container-links {
         line-height: 35px;
         font-size: 15px;
+
+    }
+
+
+    .quick-header {
+        text-align: start;
+        padding-left: 40px;
+    }
+
+    .services-header {
+        text-align: start;
+        padding-left: 40px;
+
+    }
+
+
+    .quick-header {
+        margin-top: 10px;
+    }
+
+    .ournews-contant {
+        margin-top: 10px;
+    }
+
+    .container-links {
+        text-align: start;
+        margin-top: 20px;
+    }
+
+    .ournews-contaniner {
+        margin-top: 10px;
     }
 
     .quick-links {
         font-size: 18px;
+
+
     }
 
     .details-container {
@@ -458,8 +568,19 @@
     }
 
 
-
-    .aboutus {
+}
+@media screen and (max-width: 1024px) {
+    .c-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
         text-align: center;
+        margin-top: 20px;
     }
+    .mak-tech{
+        margin-left: 0;
+    }
+     
+    
 }

@@ -247,7 +247,7 @@ import { IconUserScan } from '@tabler/icons-react';
                                             className="custom-header"
                                         >
                                             <div className="d-flex justify-content-between w-100">
-                                                <span className="accordion-title">UX DESIGN</span>
+                                                <span id="ux-design" className="accordion-title">UX DESIGN</span>
                                                 <span className="icon">{openKey === 0 ? "−" : "+"}</span>
                                             </div>
                                         </Accordion.Header>
@@ -290,12 +290,12 @@ import { IconUserScan } from '@tabler/icons-react';
                                             className="custom-header"
                                         >
                                             <div className="d-flex justify-content-between w-100">
-                                                <span className="accordion-title">UI DESIGN</span>
+                                                <span id="ui-design" className="accordion-title">UI DESIGN</span>
                                                 <span className="icon">{openKey === 1 ? "−" : "+"}</span>
                                             </div>
                                         </Accordion.Header>
                                         <Accordion.Body>
-                                            <p>
+                                            <p className="paragraph-ux">
                                                 Our UI design focuses on aesthetics and functionality. We create
                                                 visually stunning interfaces that align with your brand identity
                                                 and engage users effectively. Every color, font, and layout is
@@ -314,7 +314,7 @@ import { IconUserScan } from '@tabler/icons-react';
                                             className="custom-header"
                                         >
                                             <div className="d-flex justify-content-between w-100">
-                                                <span className="accordion-title">WEB DEVELOPMENT</span>
+                                                <span id="web-development" className="accordion-title">WEB DEVELOPMENT</span>
                                                 <span className="icon">{openKey === 2 ? "−" : "+"}</span>
                                             </div>
                                         </Accordion.Header>
@@ -337,7 +337,7 @@ import { IconUserScan } from '@tabler/icons-react';
                                             className="custom-header"
                                         >
                                             <div className="d-flex justify-content-between w-100">
-                                                <span className="accordion-title">DIGITAL MARKETING</span>
+                                                <span id="digital-marketing" className="accordion-title">DIGITAL MARKETING</span>
                                                 <span className="icon">{openKey === 3 ? "−" : "+"}</span>
                                             </div>
                                         </Accordion.Header>
@@ -361,7 +361,7 @@ import { IconUserScan } from '@tabler/icons-react';
                                             className="custom-header"
                                         >
                                             <div className="d-flex justify-content-between w-100">
-                                                <span className="accordion-title">CONTENT CREATION</span>
+                                                <span id="content-creation" className="accordion-title">CONTENT CREATION</span>
                                                 <span className="icon">{openKey === 4 ? "−" : "+"}</span>
                                             </div>
                                         </Accordion.Header>
@@ -532,7 +532,7 @@ import { IconUserScan } from '@tabler/icons-react';
                     </div>
                 </section>
 
-                  <section id='blog'>
+                  <section id='contact'>
                 
                     <div className='container mt-5 team-section'>
                         <div className='row'>

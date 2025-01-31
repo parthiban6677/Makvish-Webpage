@@ -23,14 +23,17 @@ const Menubar = () => {
 
                 {/* Standard Desktop Navbar (No Changes) */}
                 <Navbar.Collapse id="responsive-navbar-nav" className=" d-lg-flex">
-                    <Nav className="ms-auto" style={{display:"flex",alignItems:"center"}}>
+                    <Nav className="ms-auto" style={{ display: "flex", alignItems: "center" }}>
                         <Nav.Link className="navbar-link" href="#home">Home</Nav.Link>
                         <Nav.Link className="navbar-link" href="#about">About</Nav.Link>
                         <Nav.Link className="navbar-link" href="#services">Services</Nav.Link>
                         <Nav.Link className="navbar-link" href="#portfolio">Portfolio</Nav.Link>
                         <Nav.Link className="navbar-link" href="#team">Team</Nav.Link>
-                        <Nav.Link className="navbar-link" href="#blog">Blog</Nav.Link>
-                        <Button type="button" className="talk-btn">Let’s Talk</Button>
+                        {/* <Nav.Link className="navbar-link" href="#blog">Blog</Nav.Link> */}
+                        {/* <Button type="button" className="talk-btn">Let’s Talk</Button> */}
+                        <Button href="#contact" className="talk-btn">
+                            Let’s Talk
+                        </Button>
                     </Nav>
                 </Navbar.Collapse>
 
@@ -43,7 +46,7 @@ const Menubar = () => {
                         <Nav.Link className="navbar-link" href="#services" onClick={() => setMenuOpen(false)}>Services</Nav.Link>
                         <Nav.Link className="navbar-link" href="#portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Nav.Link>
                         <Nav.Link className="navbar-link" href="#team" onClick={() => setMenuOpen(false)}>Team</Nav.Link>
-                        <Nav.Link className="navbar-link" href="#blog" onClick={() => setMenuOpen(false)}>Blog</Nav.Link>
+                        {/* <Nav.Link className="navbar-link" href="#blog" onClick={() => setMenuOpen(false)}>Blog</Nav.Link> */}
                         <Button type="button" className="talk-btn">Let’s Talk</Button>
                     </Nav>
                 </div>

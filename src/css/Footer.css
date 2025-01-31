@@ -110,9 +110,22 @@
     margin-top: 20px;
 }
 
+/* .link-style{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+} */
+
+.link-list{
+    color: var(--mak-sky-blue);
+    text-decoration: none;
+    padding: 0;
+}
+
 
 .makvishan-top {
     margin-top: 49px;
+    padding-left: 25px;
 }
 
 .wrapper-details {
@@ -226,6 +239,7 @@
 
 .ournews-contaniner {
     margin-top: 49px;
+    padding-right: 40px;
 }
 
 .join-letter {
@@ -307,10 +321,15 @@
         outline: none;
         color: #07091B;
         margin-right: 30px;
+        
+        
+
     }
 
     .lapel-container {
         align-items: center;
+        margin-left: 21px;
+        
 
     }
 
@@ -457,7 +476,7 @@
 
 
     .services-header {
-        padding-left: 40px;
+        padding-left: 63px;
     }
 }
 
@@ -478,6 +497,7 @@
 
     .letter {
         text-align: center;
+        margin-left: 11%;
     }
 
     .join-letter {
@@ -486,12 +506,17 @@
 
     .contant-warper {
         text-align: center;
+        margin-left: 30px;
+        
     }
 
     .container-links {
         line-height: 35px;
         font-size: 15px;
 
+    }
+    .makvishan-top{
+        padding-left: 8px;
     }
 
 
@@ -584,3 +609,4 @@
      
     
 }
+

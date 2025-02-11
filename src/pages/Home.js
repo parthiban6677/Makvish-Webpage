@@ -39,7 +39,7 @@ import { IconUserScan } from '@tabler/icons-react';
 
 
 
- const About = () => {
+const About = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -55,156 +55,154 @@ import { IconUserScan } from '@tabler/icons-react';
 
     return (
         <div>
+            <div className="back-img">
+                <Menubar></Menubar>
+                {/* <div className="back-img"> */}
 
-            <Menubar></Menubar>
-           
-
-            <section id="home">
-                <div className="container ">
-                    <div className="hero-section">
-                        <div className="hero-title">
-                            <h1>
-                                <span className="home-title">Elevate</span>
-                                <span className="about-sub-title"> Your Business <br /> with </span>
-                                <span className="about-story"> Cutting Edge <br /> Software Solutions </span>
-                            </h1>
-                            <p className="about-desc">
-                                We are more than just a software company. We leverage technology to drive
-                                <br />
-                                innovation, growth, and success.
-                            </p>
-                        </div>
-                        <div className="hero-images">
-                            <div className="hero-img-01">
+                <section id="home">
+                    <div className="container ">
+                        <div className="hero-section">
+                            <div className="hero-title">
+                                <h1>
+                                    <span className="home-title">Elevate</span>
+                                    <span className="about-sub-title"> Your Business <br /> with </span>
+                                    <span className="home-sub-title"> Cutting Edge <br /> Software Solutions </span>
+                                </h1>
+                                <p className="about-desc">
+                                    We are more than just a software company. We leverage technology to drive
+                                    <br />
+                                    innovation, growth, and success.
+                                </p>
+                            </div>
+                            <div className="hero-images">
+                                {/* <div className="hero-img-01">
                                 <img src={home01} alt="home01" />
-                            </div>
-                            <div className="hero-img-02">
-                                <img src={home02} alt="home02" />
-                            </div>
-                            <div className="hero-img-03">
-                                <img src={home03} alt="home03" />
-                            </div>
-                            <div className="hero-img-04">
-                                <img src={home04} alt="home04" />
-                            </div>
-                            <div className="hero-img-05">
-                                <img src={home05} alt="home05" />
-                            </div>
-                            <div className="hero-img-06">
-                                <img src={home06} alt="home06" />
-                            </div>
-                            <div className="hero-img-07">
-                                <img src={home07} alt="home07" />
-                            </div>
-                            <div className="hero-img-08">
-                                <img src={home08} alt="home08" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            {/* <section className="back-img"> */}
-
-            <section id='about' >
-                <div className="about-section">
-                    <div className='container mt-5'>
-                        <div className='row'>
-                            <div className='col-12 col-md-6'>
-                                <div>
-                                    <h6 className='about-title'>ABOUT US</h6>
-                                    <h1> <span className='about-sub-title'>The</span> <span className='about-story'>Story</span> <span className='about-sub-title'>Behind <br /> </span> <span className='about-story'>Our Success</span></h1>
+                            </div> */}
+                                <div className="hero-img-02">
+                                    <img src={home02} alt="home02" />
                                 </div>
-                            </div>
-                            <div className='col-12 col-md-6'>
-                                <div className='about-desc'>
-                                    <p>
-                                        Our mission is clear: to empower businesses, organizations, and individuals with software solutions that make a difference. We believe in harnessing the power of technology to solve complex problems, streamline operations, and create exceptional user experiences.
-                                    </p>
-                                    <p>
-                                        Founded in 2023, MAKVISHAN has been at the forefront of the software industry. Delivering innovative and reliable solutions to clients across diverse sectors. Our team of highly skilled professionals brings a wealth of experience, creativity, and technical expertise to every project, ensuring that we meet and exceed your expectations.
-                                    </p>
+                                <div className="hero-img-03">
+                                    <img src={home03} alt="home03" />
+                                </div>
+                                <div className="hero-img-04">
+                                    <img src={home04} alt="home04" />
+                                </div>
+                                <div className="hero-img-05">
+                                    <img src={home05} alt="home05" />
+                                </div>
+                                <div className="hero-img-06">
+                                    <img src={home06} alt="home06" />
+                                </div>
+                                <div className="hero-img-07">
+                                    <img src={home07} alt="home07" />
+                                </div>
+                                <div className="hero-img-08">
+                                    <img src={home08} alt="home08" />
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className='container mt-5'>
-                        <div className="row">
-                            <div className="col-12 col-md-6 col-lg-6 col-xl-3">
-                                <div className=" card about-card ">
-                                    <div className='bulb-icon'>
-                                        <img src={bulb} alt="bulb" />
-                                        {/* <IconBulb stroke={2} /> */}
-                                    </div>
-                                    <div className="card-body">
-                                        <h5 className="card-title">Innovation</h5>
-                                        <p className="card-text">We thrive on innovation, constantly exploring emerging technologies and trends to provide you with the most advanced solutions.</p>
-                                    </div>
+                </section>
 
+
+                <section id='about' >
+                    <div className="about-section">
+                        <div className='container mt-5'>
+                            <div className='row'>
+                                <div className='col-12 col-md-6'>
+                                    <div>
+                                        <h6 className='about-title'>ABOUT US</h6>
+                                        <h1> <span className='about-sub-title'>The</span> <span className='about-story'>Story</span> <span className='about-sub-title'>Behind <br /> </span> <span className='about-story'>Our Success</span></h1>
+                                    </div>
+                                </div>
+
+                                <div className='col-12 col-md-6'>
+                                    <div className='about-desc'>
+                                        <p>
+                                            Our mission is clear: to empower businesses, organizations, and individuals with software solutions that make a difference. We believe in harnessing the power of technology to solve complex problems, streamline operations, and create exceptional user experiences.
+                                        </p>
+                                        <p>
+                                            Founded in 2023, MAKVISHAN has been at the forefront of the software industry. Delivering innovative and reliable solutions to clients across diverse sectors. Our team of highly skilled professionals brings a wealth of experience, creativity, and technical expertise to every project, ensuring that we meet and exceed your expectations.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-md-6 col-lg-6 col-xl-3">
-                                <div className="card about-card">
-                                    <div className='horizontal-icon'>
-                                        <img src={adjustments_horizontal} alt='adjustments_horizontal' />
-                                        {/* <IconAdjustmentsHorizontal stroke={2} /> */}
-                                    </div>
-                                    <div className="card-body">
-                                        <h5 className="card-title">Customization</h5>
-                                        <p className="card-text">We understand that every client is unique, which is why we tailor our software to your specific needs and goals.</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div className="col-12 col-md-6 col-lg-6 col-xl-3">
-                                <div className="card about-card">
-                                    <div className='bulb-icon'>
-                                        <img src={Quality_icon} className="card-img-top" alt="Quality_icon" />
-                                    </div>
-                                    <div className="card-body">
-                                        <h5 className="card-title">Quality</h5>
-                                        <p className="card-text">Quality is the cornerstone of everything we do. We rigorously test and refine our products to ensure they meet the highest industry standards.</p>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div className="col-12 col-md-6 col-lg-6 col-xl-3">
-                                <div className="card about-card">
-                                    <div className='bulb-icon'>
-                                        <img src={Client_Centric_icon} className="card-img-top" alt="Client_Centric_icon" />
-                                        {/* <IconUserScan stroke={2} /> */}
-                                    </div>
-                                    <div className="card-body">
-                                        <h5 className="card-title">Client-Centric</h5>
-                                        <p className="card-text">Your success is our success. We prioritize your needs, always striving to exceed your expectations.</p>
-                                    </div>
-
-                                </div>
-                            </div>
-
                         </div>
-                    </div>
-                </div>
 
-            </section>
-
-            {/* <About us Section 3> */}
-            <section className="back-img">
-                <section id="services">
-                    <   div className="container-fluid mt-5">   
-                        <div className="aboutus-backround">
+                        <div className='container mt-5'>
                             <div className="row">
+                                <div className="col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div className=" card about-card ">
+                                        <div className='bulb-icon'>
+                                            <img src={bulb} alt="bulb" />
+                                            {/* <IconBulb stroke={2} /> */}
+                                        </div>
+                                        <div className="card-body">
+                                            <h5 className="card-title">Innovation</h5>
+                                            <p className="card-text">We thrive on innovation, constantly exploring emerging technologies and trends to provide you with the most advanced solutions.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div className="col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div className="card about-card">
+                                        <div className='horizontal-icon'>
+                                            <img src={adjustments_horizontal} alt='adjustments_horizontal' />
+                                            {/* <IconAdjustmentsHorizontal stroke={2} /> */}
+                                        </div>
+                                        <div className="card-body">
+                                            <h5 className="card-title">Customization</h5>
+                                            <p className="card-text">We understand that every client is unique, which is why we tailor our software to your specific needs and goals.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div className="col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div className="card about-card">
+                                        <div className='bulb-icon'>
+                                            <img src={Quality_icon} className="card-img-top" alt="Quality_icon" />
+                                        </div>
+                                        <div className="card-body">
+                                            <h5 className="card-title">Quality</h5>
+                                            <p className="card-text">Quality is the cornerstone of everything we do. We rigorously test and refine our products to ensure they meet the highest industry standards.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div className="col-12 col-md-6 col-lg-6 col-xl-3">
+                                    <div className="card about-card">
+                                        <div className='bulb-icon'>
+                                            <img src={Client_Centric_icon} className="card-img-top" alt="Client_Centric_icon" />
+                                            {/* <IconUserScan stroke={2} /> */}
+                                        </div>
+                                        <div className="card-body">
+                                            <h5 className="card-title">Client-Centric</h5>
+                                            <p className="card-text">Your success is our success. We prioritize your needs, always striving to exceed your expectations.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                {/* services-section */}
+                <section id="services">
+                    <   div className="container-fluid mt-5">
+                        <div className="aboutus-backround">
+                            <div className="row about-title-desc">
                                 <div className="col-12 col-md-4  aboutus-top">
                                     <div className="aboutus-warper">
                                         <h5 className="aboutus">ABOUT US</h5>
                                         <div className="mt-3">
                                             <h2 className="header-conatiner">
-                                                <span className="what-warper">What</span><span className="bring-container">We Bring</span>
+                                                <span className="what-warper">What</span><span className="bring-container">We Bring</span><br /><span className="what-warper">to the Table</span>
                                             </h2>
-                                            <h2 className="header-table">to the Table</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -263,7 +261,7 @@ import { IconUserScan } from '@tabler/icons-react';
                                                         masterpiece.
                                                     </p>
                                                 </div>
-                                                    <div className="col-12 col-md-5 header-list ">
+                                                <div className="col-12 col-md-5 header-list ">
                                                     <div className="orderlist-head">
                                                         <ul className="list-container">
                                                             <li>User Research </li>
@@ -272,10 +270,10 @@ import { IconUserScan } from '@tabler/icons-react';
                                                             <li>AI Wireframing</li>
                                                             <li>Wireframing</li>
                                                         </ul>
-                                                       </div>
                                                     </div>
+                                                </div>
 
-                                            
+
                                             </div>
                                         </Accordion.Body>
                                     </Accordion.Item>
@@ -377,9 +375,6 @@ import { IconUserScan } from '@tabler/icons-react';
                                 </Accordion>
                             </div>
                         </div>
-
-
-                    
                     </div>
                 </section>
 
@@ -395,8 +390,7 @@ import { IconUserScan } from '@tabler/icons-react';
                             <div className='col-12 col-md-6'>
                                 <div className='about-desc'>
                                     <p>
-                                        Explore the projects that define our journey of innovation and excellence. Each solution reflects our commitment to quality, creativity, and client success. From mobile apps to web platforms, our portfolio showcases the diverse and impactful work we’ve delivered to businesses across industries.
-                                    </p>
+                                        Explore the projects that define our journey of innovation and excellence. Each solution reflects our commitment to quality, creativity, and client success. From mobile apps to web platforms, our portfolio showcases the diverse and impactful work we’ve delivered to businesses across industries.                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -404,58 +398,59 @@ import { IconUserScan } from '@tabler/icons-react';
 
                     <div className=" container tab-header mt-5">
                         {/* <Carousel indicators={false} controls={false} autoplay={true}> */}
-                            {/* <Carousel.Item> */}
-                                {/* <Tabs defaultActiveKey="1" id="tab-example" className='tab-content'> */}
-                                    {/* <Tab eventKey="1"  className='mt-4'> */}
-                                        <div className='row'>
-                                            <div className='Col-12 col-md-4'>
-                                                <div>
-                                                    <img src={Portfolio_img_01} alt='...' className='portfolio-img' />
-                                                </div>
-                                            </div>
-                                            <div className='Col-12 col-md-4'>
-                                                <div>
-                                                    <img src={Portfolio_img_02} alt='...' className='portfolio-img' />
-                                                </div>
-                                            </div>
-                                            <div className='Col-12 col-md-4'>
-                                                <div>
-                                                    <img src={Portfolio_img_03} alt='...' className='portfolio-img' />
-                                                </div>
-                                            </div>
-                                        </div>
+                        {/* <Carousel.Item> */}
+                        {/* <Tabs defaultActiveKey="1" id="tab-example" className='tab-content'> */}
+                        {/* <Tab eventKey="1"  className='mt-4'> */}
+                        <div className='row'>
+                            <div className='Col-12 col-md-4'>
+                                <div>
+                                    <img src={Portfolio_img_01} alt='...' className='portfolio-img' />
+                                </div>
+                            </div>
+                            <div className='Col-12 col-md-4'>
+                                <div>
+                                    <img src={Portfolio_img_02} alt='...' className='portfolio-img' />
+                                </div>
+                            </div>
+                            <div className='Col-12 col-md-4'>
+                                <div>
+                                    <img src={Portfolio_img_03} alt='...' className='portfolio-img' />
+                                </div>
+                            </div>
+                        </div>
 
-                                        <div className='row portfolio-row-img'>
-                                            <div className='Col-12 col-md-4'>
-                                                <div>
-                                                    <img src={Portfolio_img_04} alt='...' className='portfolio-img' />
-                                                </div>
-                                            </div>
-                                            <div className='Col-12 col-md-4'>
-                                                <div>
-                                                    <img src={Portfolio_img_05} alt='...' className='portfolio-img' />
-                                                </div>
-                                            </div>
-                                            <div className='Col-12 col-md-4'>
-                                                <div>
-                                                    <img src={Portfolio_img_01} alt='...' className='portfolio-img' />
-                                                </div>
-                                            </div>
-                                        </div>
+                        <div className='row portfolio-row-img'>
+                            <div className='Col-12 col-md-4'>
+                                <div>
+                                    <img src={Portfolio_img_04} alt='...' className='portfolio-img' />
+                                </div>
+                            </div>
+                            <div className='Col-12 col-md-4'>
+                                <div>
+                                    <img src={Portfolio_img_05} alt='...' className='portfolio-img' />
+                                </div>
+                            </div>
+                            <div className='Col-12 col-md-4'>
+                                <div>
+                                    <img src={Portfolio_img_01} alt='...' className='portfolio-img' />
+                                </div>
+                            </div>
+                        </div>
 
-                                    {/* </Tab> */}
+                        {/* </Tab> */}
 
 
-                                {/* </Tabs> */}
-                            {/* </Carousel.Item> */}
+                        {/* </Tabs> */}
+                        {/* </Carousel.Item> */}
                         {/* </Carousel> */}
                     </div>
 
                     <div className='m-4 text-center'>
                         <h1 className='see-more'>See More</h1>
-
+                     
+                        {/* className="mx-auto d-block"  */}
                         <a href="#team" >
-                            <img src={see_more_icon} alt="See More Icon" className="mx-auto d-block" />
+                            <img src={see_more_icon} alt="See More Icon"/>
                         </a>
 
                     </div>
@@ -532,8 +527,8 @@ import { IconUserScan } from '@tabler/icons-react';
                     </div>
                 </section>
 
-                  <section id='contact'>
-                
+                <section id='contact'>
+
                     <div className='container mt-5 team-section'>
                         <div className='row'>
                             <div className='col-12 col-md-6'>
@@ -553,7 +548,7 @@ import { IconUserScan } from '@tabler/icons-react';
                                 </div>
                             </div>
                         </div>
-                     
+
                         <div className='row mt-5'>
                             <div className='col-12 col-md-3'>
                                 <div>
@@ -564,7 +559,7 @@ import { IconUserScan } from '@tabler/icons-react';
                                 </div>
                             </div>
                             <div className='col-12 col-md-3'>
-                                <div>
+                                <div className="contact-mail-head">
                                     <p className='contact-desc'>
                                         Having a project in mind? <br /> Send a message to
                                     </p>
@@ -601,13 +596,14 @@ import { IconUserScan } from '@tabler/icons-react';
                             </div>
                         </div>
                     </div>
-              
-                </section> 
-         
 
-            <Footer />
-            </section>
+                </section>
+                {/* </div> */}
+
+                <Footer />
             </div>
+
+        </div>
     )
 }
 

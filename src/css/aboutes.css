@@ -1,23 +1,14 @@
 /* section 3 */
-
-
-
 .group-line {
   color: var(--mak-blue);
   filter: invert(1);
   width: 10px;
   height: 2px;
-
-
 }
-
 
 .aboutus-backround {
   background: transparent radial-gradient(closest-side at 54% 51%, #131A58 0%, #07091B 100%) 0% 0% no-repeat padding-box;
-  ;
   border-radius: 30px;
-
-
 }
 
 .aboutus-warper {
@@ -45,7 +36,6 @@
 
 .paragraph-left {
   margin-left: 160px;
-
 }
 
 .what-warper {
@@ -53,7 +43,6 @@
   font-size: 45px;
   letter-spacing: -1.25px;
   font-weight: 10;
-
 }
 
 .bring-container {
@@ -63,8 +52,6 @@
   color: var(--mak-white);
   margin-left: 12px;
 }
-
-
 
 .what-warper {
 
@@ -78,7 +65,6 @@
   color: var(--mak-white);
   letter-spacing: -1.25px;
   margin-left: 2px;
-
 }
 
 .paragraph-head {
@@ -94,7 +80,6 @@
   height: 2px;
   filter: invert(8);
   filter: invert(29%) sepia(93%) saturate(5615%) hue-rotate(205deg) brightness(95%) contrast(90%);
-
 }
 
 .paragraph {
@@ -102,13 +87,9 @@
   color: var(--mak-sky-blue);
 }
 
-
 .paragraph-aboutes {
   font-weight: bold;
 }
-
-
-
 
 .line-container {
   margin-left: 30px;
@@ -132,11 +113,10 @@
   margin: 10px auto;
   text-align: center;
   padding: 5px;
-
 }
 
 .dash-row {
-  width: 88%;
+  width: 89%;
   border: none;
   border-top: 2px dashed var(--mak-sky-blue);
   display: block;
@@ -149,8 +129,6 @@
   margin-top: 70px;
 }
 
-
-
 .colops-container {
   font-size: 14px;
   color: var(--mak-sky-blue);
@@ -161,11 +139,7 @@
   list-style: none;
   /* margin-left: 50px; */
   margin-left: 55%;
-
 }
-
-
-
 
 .accordion-button:not(.collapsed) {
   color: var(--bs-accordion-active-color);
@@ -178,7 +152,6 @@
   justify-content: space-between;
 
 }
-
 
 /* styles.css */
 .accordion-body {
@@ -201,11 +174,7 @@
 
 }
 
-
-
 .accordion-button {
-
-
   align-items: center;
   width: 100%;
   padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
@@ -219,11 +188,9 @@
   transition: var(--bs-accordion-transition)
 }
 
-
 .warper-header {
   display: flex;
 }
-
 
 .ui-classes {
   font-size: 14px;
@@ -234,44 +201,29 @@
 .accordion-button::after {
   flex-shrink: 0;
   width: 5rem;
-  /* Icon width */
   height: 1.5rem;
-  /* Icon height */
   margin-left: auto;
   content: "-";
-  /* Default icon: plus */
   color: var(--bs-accordion-btn-color, #000);
-  /* Icon color */
   font-size: 1.25rem;
-  /* Icon size */
   font-weight: bold;
-  /* Make the icon bold */
   text-align: center;
   line-height: 1.5rem;
-  /* Vertically center the icon */
   transition: transform 0.2s ease-in-out;
 }
 
 /* Change to a minus (-) when expanded */
 .accordion-button:not(.collapsed)::after {
   content: "-";
-  /* Expanded icon: minus */
   transform: rotate(0deg);
-  /* Reset rotation */
 }
-
-
-
-
 
 /* Styling the accordion header */
 .custom-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* Ensures space between the icon and the text */
   gap: 10px;
-  /* Adds gap between the icon and the text */
   cursor: pointer;
   font-size: 1.25rem;
   font-weight: bold;
@@ -279,7 +231,6 @@
 
 .custom-header span {
   font-size: 22px;
-  /* Adjust icon size */
   font-weight: 600;
   color: var(--mak-white);
 
@@ -287,22 +238,17 @@
 
 .header-text {
   flex-grow: 9;
-  /* Ensures the text aligns properly */
-
-
 }
 
 /* Remove default accordion icon */
 .accordion-button::after {
   display: none;
-  /* Hide the default dropdown caret */
 }
 
 /* Styling the accordion body */
 .accordion-container {
   display: flex;
   gap: 20px;
-  /* Gap between content in the accordion body */
 }
 
 .ui-classes {
@@ -320,28 +266,21 @@
   font-size: 1.25rem;
   font-weight: bold;
   background-color: transparent !important;
-  /* Remove background */
   border: none !important;
-  /* Remove border */
 }
 
 .accordion-item {
   background-color: transparent !important;
-  /* Remove the background color of the accordion item */
   border: none !important;
-  /* Remove the border */
 }
 
 .accordion-button {
   background-color: transparent !important;
-  /* Remove button background */
   border: none !important;
-  /* Remove button border */
 }
 
 .accordion-button:not(.collapsed) {
   background-color: transparent !important;
-  /* Remove active button background */
 }
 
 /* Remove default icon caret */
@@ -351,9 +290,7 @@
 
 .accordion-body {
   background-color: transparent !important;
-  /* Ensure the accordion body background is transparent */
   border: none !important;
-  /* Remove border from the accordion body */
 }
 
 /* Optional: If you want to keep accordion border on hover */
@@ -362,28 +299,19 @@
   background-color: transparent !important;
 }
 
-
-
-
 .accordion-container {
   border: none;
-  /* Remove any borders */
   box-shadow: none;
-  /* Remove any shadow that could mimic a border */
 }
 
 .ui-classes {
   border: none;
-  /* If the list has any borders, remove them */
   padding: 0;
-  /* Ensure there’s no padding that might make the content appear with a border */
 }
 
 .colops-container {
   border: none;
-  /* Remove any border if applied to paragraphs */
   padding: 0;
-  /* Remove any internal padding */
 }
 
 
@@ -398,14 +326,11 @@
 
 .custom-accordion .header-text {
   flex-grow: 1;
-  /* Makes the text occupy the center */
   text-align: center;
-  /* Centers the text */
 }
 
 .custom-accordion span:last-child {
   flex-shrink: 0;
-  /* Prevents the icon from shrinking */
 }
 
 .aboutus-backround .row {
@@ -413,20 +338,12 @@
   margin-right: 0;
 }
 
-
-
-
-
 .custom-header {
   display: flex;
   justify-content: center;
-  /* This centers the content horizontally */
   align-items: center;
-  /* This centers the content vertically */
   width: 100%;
-  /* Ensure it takes the full width */
   gap: 10px;
-  /* Optional: space between the text and the icon */
   cursor: pointer;
   font-size: 1.25rem;
   font-weight: bold;
@@ -434,24 +351,18 @@
 
 .header-text {
   flex-grow: 1;
-  /* Makes the text grow to fill available space */
   text-align: center;
-  /* Ensures text is centered if needed */
 }
 
 .accordion-button::after {
   display: none;
-  /* Optional: If you don't want the default icon/caret */
 }
-
 
 /* Center the accordion item within the accordion */
 .accordion-item {
   margin-left: 5%;
   gap: 30%;
 }
-
-
 
 .icon {
   margin-right: 50px;
@@ -472,15 +383,12 @@
   border-radius: 0;
   overflow-anchor: none;
   transition: var(--bs-accordion-transition);
-
 }
 
 /* Optional: Ensure the accordion header is aligned */
 .accordion-header {
   display: flex;
   justify-content: space-between;
-  /* Aligns the text and icon */
-
 }
 
 
@@ -490,74 +398,56 @@
 @media (max-width: 768px) {
   .accordion-item {
     max-width: 100%;
-    /* Ensure full width on smaller screens */
   }
 }
 
 .ux-design {
   display: flex;
   gap: 1000px;
-
-
 }
 
 .custom-header {
   margin-right: 15px;
-  /* Moves the margin to the right */
   padding: 0;
-  /* Removes padding */
 }
 
 .custom-header .icon {
   margin-left: auto;
-  /* Ensures the icon stays aligned to the right */
 }
 
 .accordion-title {
   margin: 10px;
+  font: normal normal 600 22px/30px;
+  font-family: var(font-family);
 }
 
 .accordion-body {
   padding: 10px;
-  /* Adjust body padding if necessary */
 }
-
 
 .custom-header {
   display: flex;
   justify-content: space-between;
-  /* Ensures text and icon are at opposite ends */
   align-items: center;
-  /* Aligns items vertically */
   width: 100%;
-  /* Takes full width */
   cursor: pointer;
   font-size: 1.25rem;
   font-weight: bold;
   padding: 0;
-  /* Removes padding from the header */
 }
 
 .accordion-button {
   padding: 0;
-  /* Removes padding from the accordion button */
   background: transparent;
-  /* Ensures no background color */
   border: none;
-  /* Removes border */
   box-shadow: none;
-  /* Removes any shadow */
 }
 
 .accordion-body {
   padding: 0;
-  /* Removes padding from the accordion body */
   background: transparent;
-  /* Ensures no background */
   border: none;
-  /* Removes border */
 }
-
 
 .paragraph-ux {
   font-size: 14px;
@@ -566,13 +456,11 @@
   margin-left: 20px;
 }
 
-
 .list-container {
   font-size: 14px;
   color: var(--mak-sky-blue);
   list-style: none;
   line-height: 30px;
-
 }
 
 .header-list {
@@ -608,7 +496,6 @@
 
   .header-list {
     flex-direction: column;
-
   }
 
   .what-warper,
@@ -616,7 +503,6 @@
   .header-table {
     font-size: 28px;
     text-align: center;
-
   }
 
   .warper-header {
@@ -630,34 +516,28 @@
   .colops-container,
   .list-container {
     font-size: 12px;
-    /* Adjust paragraph font size */
     line-height: 22px;
   }
 
   .ui-classes {
     margin-left: 10%;
-    /* Reduce indentation for smaller screens */
   }
 
   .accordion-button {
     gap: 10%;
-    /* Adjust gap for smaller screens */
   }
 
   .accordion-item {
     max-width: 100%;
     margin: 0 auto;
-    /* Center the accordion item */
   }
 
   .accordion-body {
     font-size: 12px;
-    /* Adjust accordion body text */
   }
 
   .custom-header {
     flex-direction: column;
-    /* Stack icon and text */
     text-align: center;
     gap: 5px;
   }
@@ -677,7 +557,6 @@
 @media (max-width: 568px) {
   .accordion-header {
     flex-direction: column;
-    /* Stack header elements */
     text-align: center;
     gap: 10px;
   }
@@ -757,12 +636,10 @@
   .accordion-title {
     margin-left: 25px;
   }
-
 }
 
 .accordion-button {
   padding-left: 0 !important;
-
 }
 
 .accordion-item:first-of-type>.accordion-header .accordion-button {
@@ -779,13 +656,10 @@
 .accordion-body {
   padding-left: 0 !important;
 
-
 }
 
 .accordion-button {
   box-shadow: 0 0 0 0rem rgba(13, 110, 253, 0.25) !important;
-
-
 }
 
 .accordion {

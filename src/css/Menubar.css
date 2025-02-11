@@ -1,20 +1,17 @@
-/* --- Base Navbar Styles (No Changes for Desktop) --- */
 .custom-navbar {
   background-color: var(--mak-white);
 }
 
 .navbar-logo {
   padding: 22px 0px 0px 14px;
-  filter: brightness(150%);
-  filter: saturate(300%);
 }
 
-/* Mobile Menu (Initially Hidden Off-Screen) */
+
+
 .mobile-menu {
   position: fixed;
   top: 0;
   right: -100%;
-  /* Hidden */
   width: 250px;
   height: 100vh;
   background-color: var(--mak-white);
@@ -48,17 +45,15 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-top: 25px;
   
 }
 
 .navbar-link {
   font-size: 15px;
-  /* font-weight: 600; */
   text-decoration: none;
   margin: 20px 20px 0px 0px;
-  /* border-bottom: 1px solid #ddd; */
   transition: color 0.3s ease;
-
   color: var(--mak-slategray) !important;
   text-decoration: none;
   font-weight: 600 !important;
@@ -98,8 +93,13 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-
 }
+
+.logo-container{
+  margin-top: -25px;
+  width: 150px;
+}
+
 
 /* Hide Mobile Menu for Large Screens */
 @media (min-width: 992px) {
@@ -121,7 +121,6 @@
     margin: 0px;
     padding: 0px;
   }
-
 
   .navbar-collapse {
     display: none;
@@ -145,10 +144,6 @@
     background-color: var(--mak-blue);
     border-radius: 100%;
   }
-
-  /* .navbar-logo {
-    padding: 0px;
-  } */
 
   .navbar-logo {
     padding: 10px 0px 0px 14px;

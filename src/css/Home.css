@@ -1,16 +1,22 @@
 /* home-section */
-
 .home-title {
-    font: 600 60px/90px 'Sofia Pro', sans-serif !important;
+    font: 600 60px/90px 'outfit' !important;
     font-weight: 600;
     font-size: 45px;
     line-height: 70px;
-    font-family: var(font-family);
     color: var(--mak-blue);
 }
 
+.home-sub-title{
+    font: 600 60px/90px 'outfit' !important;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 70px;
+    color: var(--mak-black);
+}
+
 .hero-section{
-    margin-top: 210px;
+    margin-top: -80px;
 }
 
 .hero-title {
@@ -25,52 +31,51 @@
 
 .hero-img-02 {
     position: absolute;
-    top: 200px;
+    top: 95px;
     left: 545px;
 }
 
 .hero-img-03 {
     position: absolute;
-    top: 542px;
+    top: 435px;
     left: 902px;
 }
 
 .hero-img-04{
     position: absolute;
-    top: 200px;
+    top: 120px;
     left: 165px;
 }
 
 .hero-img-05{
     position: absolute;
-    top: 165px;
+    top: 105px;
     left: 460px;
 }
 
 .hero-img-06{
     position: absolute;
-    top: 155px;
+    top: 105px;
     left: 540px;
 }
 
 .hero-img-07{
     position: absolute;
-   top: 190px;
+   top: 100px;
    left: 990px;
 }
 
 .hero-img-08{
     position: absolute;
-    top: 210px;
+    top: 130px;
     left: 1045px;
 }
 
 
 
 /* about-section */
-
 .about-section{
-    margin-top: 150px;
+    margin-top: 120px;
 }
 
 .about-title {
@@ -94,29 +99,26 @@
 }
 
 .about-story {
-    font: 600 45px 'Sofia Pro', sans-serif;
-    font-family: var(font-family);
+    font: normal normal 600 45px/70px Sofia Pro;
+    font-family: 'outfit';
     color: var(--mak-black);
 }
 
 .about-desc {
-    color: var(--mak-slategray);
+    /* color: var(--mak-slategray); */
     font-size: 14px;
-    font-family: var(font-family);
+    font-family: 'outfit';
     line-height: 30px;
     margin-top: 30px;
+    letter-spacing: 1%;
+    color: #9497A1;
 }
 
 .bulb-icon {
-    /* display: flex; */
-    /* justify-content: center; */
     align-items: center;
-    /* border: 1.5px solid #F0F4FA; */
     width: 65px;
     height: 65px;
     margin: 20px;
-    /* color: var(--mak-blue); */
-    /* border-radius: 15%; */
 }
 
 .horizontal-icon{
@@ -127,18 +129,16 @@
     width: 65px;
     height: 65px;
     margin: 20px;
-    /* color: var(--mak-blue); */
     border-radius: 15%;
 }
 
 .about-card {
-    width: 269px !important;
-    height: 380px !important;
+    width: 100%;
+    height: 340px !important;
     background: var(--mak-white) 0% 0% no-repeat padding-box;
     border-radius: 20px !important;
     opacity: 1;
     border: none !important;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -163,11 +163,10 @@
 
 
 
-/* p0rtfolio-section */
+/* portfolio-section */
 .portfolio-img {
-    max-width: 100%;
-    width: 369px;
-    height: 400px;
+    width: 100%;
+    height: auto;
 }
 
 .portfolio-row-img{
@@ -192,15 +191,12 @@
 }
 
 
-
 /* team-section */
 .team-img {
     display: block;
     position: relative;
-    max-width:  100%;
     width: 100%;
-    height: 380px;
-    /* object-fit: cover; */
+    height: auto;
 }
 
 .teams-name {
@@ -232,18 +228,20 @@
     font-weight: 600;
 }
 
+.contact-mail-head{
+    margin-left: -120px;
+}
+
 .form-content {
     background: var(--mak-white) 0% 0% no-repeat padding-box;
     opacity: 1;
-    /* border: none !important; */
-    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
     width: 292px;
     height: 60px;
     border-radius: 10px;
     color: var(--mak-slategray);
     font-size: 14px !important;
     font-family: var(font-family);
-    border: 1px solid black;
+    border: none !important;
 }
 
 
@@ -253,13 +251,11 @@
     height: 60px;
     background: var(--mak-white) 0% 0% no-repeat padding-box;
     opacity: 1;
-    /* border: none !important; */
-    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
     border-radius: 10px;
     color: var(--mak-slategray);
     font-size: 14px !important;
     font-family: var(font-family);
-    border: 1px solid black;
+    border: none !important;
 }
 
 .form-message {
@@ -268,14 +264,11 @@
     height: 150px;
     background: var(--mak-white) 0% 0% no-repeat padding-box;
     opacity: 1;
-    /* border: none !important; */
-    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
     border-radius: 10px;
     color: var(--mak-slategray);
     font-size: 14px !important;
     font-family: var(font-family);
-    border: 1px solid black;
-    /* padding: 20px !important; */
+    border: none !important;
 }
 
 .form-talk-btn {
@@ -291,9 +284,15 @@
 }
 
 .back-img {
-    background-image: url('../assets/img/contact-back-img\ copy.png');
-    height: auto;
+    background-image: url("../assets/img/contact-back-img copy.png");
+    background-size: cover; 
+    background-position: center; 
+    /* background-repeat: no-repeat;  */
+    min-height: 100vh; 
+    width: 100%;
 }
+
+
 
 
 
@@ -335,17 +334,15 @@
 @media screen and (max-width: 468px) {
 
     .about-card {
-        max-width: 100% !important;
         width: 100% !important;
         height: 380px !important;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
         margin-bottom: 15px;
     }
 
     .portfolio-img {
-        max-width: 100% !important;
         width: 100% !important;
-        height: 400px !important;
+        height: auto !important;
         margin-bottom: 15px;
     }
 
@@ -361,20 +358,26 @@
        margin-top: 20px;
     }
 
+    .hero-title {
+        text-align: left;
+    }
+
+    .contact-mail-head{
+        margin-top: 10px;
+    }
+
 }
 
 
 @media screen and (max-width: 768px) {
     .about-card {
-        max-width: 100% !important;
         width: 100% !important;
         height: 380px !important;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
         margin-bottom: 15px;
     }
 
     .portfolio-img {
-        max-width: 100% !important;
         width: 100% !important;
         height: 300px;
         margin-bottom: 15px;
@@ -398,10 +401,9 @@
 @media screen and (max-width: 1024px) {
 
     .about-card {
-        max-width: 100% !important;
         width: 100% !important;
-        height: 380px !important;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        height: 340px !important;
+        /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
         margin-bottom: 15px;
     }
 
@@ -446,10 +448,10 @@
     .about-section{
         margin-top: 0;
     }
-    
-    /* .portfolio-row-img{
-        margin-top: 0 !important;
-    } */
+
+    .contact-mail-head{
+        margin-left: 0;
+    }
 }
 
 

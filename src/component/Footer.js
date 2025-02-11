@@ -14,8 +14,8 @@ function Footer() {
             <section>
                 {/* <Footer Section 7> */}
                 <div className='container-fluid mt-5 bottom-head '>
-                    <div className='footer-backround '>
-                        <div className='row container-footer p-1'>
+                    <div className='footer-backround p-1 '>
+                        <div className='row container-footer '>
                             <div className='col-12 col-md-6 col-lg-3'>
                                 <div className='makvishan-top'>
                                     <img src={makvishanlogo} alt="makvishanlogo" className='mak-logo' />
@@ -26,10 +26,6 @@ function Footer() {
                                                 <img src={sendmail} alt="sendmail" className="mail-wrapper me-2" />
                                                 <a href='mailto:veera@makvishan.com' className='link-list'><li className="wrapper-details m-0">veera@makvishan.com</li></a>
 
-                                                {/* <a href="mailto:veera@makvishan.com" className="text-decoration-none text-dark">
-                                                    veera@makvishan.com
-                                                </a> */}
-
                                             </div>
 
                                             <div className="d-flex align-items-center phone-header">
@@ -39,7 +35,7 @@ function Footer() {
                                             <div className="d-flex align-items-start map-header">
                                                 <img src={map} alt="map" className="location-icon me-2" />
                                                 <a href='https://www.google.com/maps/search/?api=1&query=N0+45,+VAO+Nagar,+Sandapet,+Thirukoilur,+Tamilnadu-60575' className='link-list'><li className="wrapper-detail m-0">
-                                                    N0 45, VAO Nagar, Sandapet,
+                                                    N0 45, VAO Nagar, Sandapet, <br />
                                                     Thirukoilur, Tamilnadu-60575
                                                 </li></a>
                                             </div>
